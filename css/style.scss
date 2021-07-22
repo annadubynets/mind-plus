@@ -1,0 +1,76 @@
+@import "./bootstrap.min.css";
+@import "fonts.css";
+@import "variables";
+body {
+    font-family: 'Futura', sans-serif;
+    font-weight: 500;
+}
+
+.landing {
+    background: linear-gradient(97.09deg, #132028 3.83%, #395765 98.1%);
+}
+
+.btn-success {
+    font-size: 18px;
+    border-radius: 72px;
+    padding: 15px;
+    color: $white;
+    background-color: $springgreen;
+    border: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.circle-style {
+    margin: auto;
+    background-color: $white;
+    width: 68px;
+    height: 68px;
+    position: relative;
+    transition: .3s;
+    img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.heading-border-bottom {
+    position: relative;
+    padding-bottom: 28px;
+    &::after {
+        content: "";
+        display: block;
+        height: 7px;
+        width: 167px;
+        background-color: $skyblue;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -92px;
+    }
+}
+
+.descr-border-bottom {
+    position: relative;
+    padding-bottom: 20px;
+    &::after {
+        content: "";
+        display: block;
+        width: 199px;
+        color: $skyblue;
+        border-width: 1px;
+        border-style: dashed solid;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -92px;
+    }
+}
