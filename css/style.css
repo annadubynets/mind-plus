@@ -18,8 +18,16 @@ h1 {
   font-size: 13px;
 }
 
+.font-size-18 {
+  font-size: 18px;
+}
+
 .text-info {
   color: #7DC1D1 !important;
+}
+
+.text-dark {
+  color: #15232B !important;
 }
 
 .pt-36px {
@@ -45,6 +53,22 @@ body {
   padding: 15px;
   color: #FFFFFF;
   background-color: #32E28E;
+  border: none;
+}
+
+.btn-check:focus + .btn-success,
+.btn-success:focus {
+  background-color: #32E28E;
+  border: none;
+  box-shadow: none;
+}
+
+.btn-secondary {
+  font-size: 18px;
+  border-radius: 72px;
+  padding: 15px;
+  color: #FFFFFF;
+  background-color: #8F9FB1;
   border: none;
 }
 
@@ -102,6 +126,19 @@ ul {
   bottom: 0;
   left: 50%;
   margin-left: -92px;
+}
+
+.modal-dialog .modal-content {
+  background: #F7F8F9;
+  border-radius: 30px;
+}
+
+.btn-close {
+  background: url("../images/btn-close.svg");
+  background-repeat: no-repeat;
+  opacity: 1;
+  margin-top: 28px;
+  margin-bottom: 110px;
 }
 
 /*# sourceMappingURL=style.css.map */

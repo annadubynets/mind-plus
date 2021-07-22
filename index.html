@@ -18,7 +18,28 @@
 
                     <img src="images/main-bg.png" alt="main picture" class="pb-4 w-100">
 
-                    <button type="button" class="btn btn-success w-100">Start training </button>
+                    <button type="button" class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Start training </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="text-end">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-dialog">
+                            <div class="modal-content p-4">
+                                <p class="font-size-18 text-dark mb-4">Please confirm your subscription to Mind+ for XX €/ per day</p>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Cancel</button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="button" class="btn btn-success w-100">Confirm</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <p class="text-info font-size-12 pt-1 pb-3">XX €/ per day</p>
 

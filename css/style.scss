@@ -19,6 +19,22 @@ body {
     border: none;
 }
 
+.btn-check:focus+.btn-success,
+.btn-success:focus {
+    background-color: $springgreen;
+    border: none;
+    box-shadow: none;
+}
+
+.btn-secondary {
+    font-size: 18px;
+    border-radius: 72px;
+    padding: 15px;
+    color: $white;
+    background-color: $lightsteelblue;
+    border: none;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -73,4 +89,19 @@ ul {
         left: 50%;
         margin-left: -92px;
     }
+}
+
+.modal-dialog {
+    .modal-content {
+        background: #F7F8F9;
+        border-radius: 30px;
+    }
+}
+
+.btn-close {
+    background: url("../images/btn-close.svg");
+    background-repeat: no-repeat;
+    opacity: 1;
+    margin-top: 28px;
+    margin-bottom: 110px;
 }
