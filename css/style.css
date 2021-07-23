@@ -228,8 +228,7 @@ ul {
   right: 0;
   z-index: 99;
 }
-.custom-select .select-items div:hover,
-.custom-select .select-items .custom-select .same-as-selected {
+.custom-select .select-items .same-as-selected {
   background-color: #A4CFD8;
 }
 .custom-select .select-items div,

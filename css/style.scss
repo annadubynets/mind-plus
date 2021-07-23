@@ -180,8 +180,7 @@ ul {
         left: 0;
         right: 0;
         z-index: 99;
-        div:hover,
-        .custom-select .same-as-selected {
+        .same-as-selected {
             background-color: $powderblue;
         }
     }
