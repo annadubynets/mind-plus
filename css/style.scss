@@ -10,13 +10,16 @@ body {
     background: linear-gradient(97.09deg, #132028 3.83%, #395765 98.1%);
 }
 
-.btn-success {
+.btn {
     font-size: 18px;
     border-radius: 72px;
     padding: 15px;
     color: $white;
-    background-color: $springgreen;
     border: none;
+}
+
+.btn-success {
+    background-color: $springgreen;
 }
 
 .btn-check:focus+.btn-success,
@@ -27,12 +30,17 @@ body {
 }
 
 .btn-secondary {
-    font-size: 18px;
-    border-radius: 72px;
-    padding: 15px;
-    color: $white;
     background-color: $lightsteelblue;
-    border: none;
+}
+
+.btn-info {
+    background-color: $skyblue;
+    &:hover {
+        color: $white;
+        background-color: $skyblue;
+        border: none;
+        box-shadow: none;
+    }
 }
 
 ul {
