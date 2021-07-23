@@ -1,14 +1,17 @@
 @import "./bootstrap.min.css";
 @import "fonts.css";
-h1 {
-  font-weight: bold;
-  font-size: 30px;
+h1,
+h2 {
+  font-family: "Futura";
   color: #FFFFFF;
+}
+
+h1 {
+  font-size: 30px;
 }
 
 h2 {
   font-size: 28px;
-  color: #FFFFFF;
 }
 
 .font-size-10 {
@@ -52,8 +55,7 @@ h2 {
 }
 
 body {
-  font-family: "Futura", sans-serif;
-  font-weight: 500;
+  font-family: "Futura Md BT", sans-serif;
 }
 
 .landing {
@@ -177,7 +179,7 @@ ul {
 .form-control {
   font-family: "Futura Lt BT";
   font-style: italic;
-  font-weight: 300 !important;
+  font-weight: 300;
   border: none;
   border-radius: 6px;
   padding: 9px 17px;

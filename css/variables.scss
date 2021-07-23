@@ -11,15 +11,18 @@ $red: #EE2F3F;
 $white: #FFFFFF;
 $black: #15232B;
 $springgreen: #32E28E;
-h1 {
-    font-weight: bold;
-    font-size: 30px;
+h1,
+h2 {
+    font-family: 'Futura';
     color: $white;
+}
+
+h1 {
+    font-size: 30px;
 }
 
 h2 {
     font-size: 28px;
-    color: $white;
 }
 
 .font-size-10 {
