@@ -134,7 +134,7 @@ ul {
 
 /* Custom select */
 
-.formselectwrap {
+.custom-select {
     position: relative;
     select {
         display: none;
@@ -142,20 +142,26 @@ ul {
     .select-selected {
         background-color: $white;
         text-align: start;
+        border: 3px solid $white;
         &::after {
+            background-image: url("data:image/svg+xml,%3Csvg width='15' height='10' viewBox='0 0 15 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.5 9.57031L0.138786 0.570312L14.8612 0.570311L7.5 9.57031Z' fill='%233B4B5B'/%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
             position: absolute;
             content: "";
-            width: 0;
-            height: 0;
-            border: solid rgba(23, 20, 20, 0.6);
-            border-width: 0 2px 2px 0;
+            width: 17px;
+            height: 12px;
             display: inline-block;
             padding: 3px;
-            position: absolute;
-            transform: rotate( 45deg);
             right: 15px;
-            top: 40%;
+            top: 42%;
         }
+        &.select-arrow-active {
+            border: 3px solid $skyblue;
+        }
+    }
+    .select-selected.select-arrow-active:after {
+        transform: rotate( 180deg);
+        top: 36%;
     }
     .select-items {
         position: absolute;
@@ -166,10 +172,10 @@ ul {
         left: 0;
         right: 0;
         z-index: 99;
-    }
-    .select-items div:hover,
-    .same-as-selected {
-        background-color: rgba(0, 0, 0, 0.1);
+        div:hover,
+        .custom-select .same-as-selected {
+            background-color: $powderblue;
+        }
     }
     .select-items div,
     .select-selected {
@@ -180,12 +186,8 @@ ul {
         color: #8C9090;
         padding: 8px 16px;
         border-radius: 7px;
-        border: 1px solid transparent;
         cursor: pointer;
         user-select: none;
-    }
-    .select-selected.select-arrow-active:after {
-        transform: rotate( 223deg);
     }
     .select-hide {
         display: none;

@@ -1,6 +1,6 @@
 var x, i, j, l, ll, selElmnt, a, b, c;
 /*look for any elements with the class "formselectwrap":*/
-x = document.getElementsByClassName("formselectwrap");
+x = document.getElementsByClassName("custom-select");
 l = x.length;
 for (i = 0; i < l; i++) {
     selElmnt = x[i].getElementsByTagName("select")[0];
