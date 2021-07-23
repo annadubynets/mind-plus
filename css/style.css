@@ -157,8 +157,7 @@ ul {
 }
 
 .card-bg-style {
-  background: linear-gradient(97.09deg, #394B55 3.83%, #395765 98.1%);
-  opacity: 0.9;
+  background: linear-gradient(97.09deg, rgba(57, 75, 85, 0.9) 3.83%, rgba(57, 87, 101, 0.9) 98.1%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
