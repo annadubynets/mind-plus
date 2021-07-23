@@ -105,3 +105,88 @@ ul {
     margin-top: 28px;
     margin-bottom: 110px;
 }
+
+.wifi {
+    background: url("../images/wifi-bg.svg");
+}
+
+.card-bg-style {
+    background: linear-gradient(97.09deg, #394B55 3.83%, #395765 98.1%);
+    opacity: 0.9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.form-control {
+    font-family: 'Futura Lt BT';
+    font-style: italic;
+    font-weight: 300!important;
+    border: none;
+    border-radius: 6px;
+    padding: 9px 17px;
+    color: $black;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+
+/* Custom select */
+
+.formselectwrap {
+    position: relative;
+    select {
+        display: none;
+    }
+    .select-selected {
+        background-color: $white;
+        text-align: start;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            border: solid rgba(23, 20, 20, 0.6);
+            border-width: 0 2px 2px 0;
+            display: inline-block;
+            padding: 3px;
+            position: absolute;
+            transform: rotate( 45deg);
+            right: 15px;
+            top: 40%;
+        }
+    }
+    .select-items {
+        position: absolute;
+        background-color: $white;
+        border-radius: 7px;
+        text-align: start;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+    }
+    .select-items div:hover,
+    .same-as-selected {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    .select-items div,
+    .select-selected {
+        font-family: 'Futura Lt BT';
+        font-style: italic;
+        font-weight: 300!important;
+        font-size: 16px;
+        color: #8C9090;
+        padding: 8px 16px;
+        border-radius: 7px;
+        border: 1px solid transparent;
+        cursor: pointer;
+        user-select: none;
+    }
+    .select-selected.select-arrow-active:after {
+        transform: rotate( 223deg);
+    }
+    .select-hide {
+        display: none;
+    }
+}

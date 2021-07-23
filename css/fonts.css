@@ -1,17 +1,26 @@
 @font-face {
-    font-family: 'Futura MdCn BT';
-    src: url('../fonts/FuturaBT-MediumCondensed.eot');
-    src: url('../fonts/FuturaBT-MediumCondensed.eot?#iefix') format('embedded-opentype'), url('../fonts/FuturaBT-MediumCondensed.woff2') format('woff2'), url('../fonts/FuturaBT-MediumCondensed.woff') format('woff'), url('../fonts/FuturaBT-MediumCondensed.ttf') format('truetype'), url('../fonts/FuturaBT-MediumCondensed.svg#FuturaBT-MediumCondensed') format('svg');
+    font-family: 'Futura Md BT';
+    src: url('../fonts/FuturaBT-Medium.eot');
+    src: url('../fonts/FuturaBT-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/FuturaBT-Medium.woff2') format('woff2'), url('../fonts/FuturaBT-Medium.woff') format('woff'), url('../fonts/FuturaBT-Medium.ttf') format('truetype'), url('../fonts/FuturaBT-Medium.svg#FuturaBT-Medium') format('svg');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Futura BdCn BT';
-    src: url('../fonts/FuturaBT-BoldCondensed.eot');
-    src: url('../fonts/FuturaBT-BoldCondensed.eot?#iefix') format('embedded-opentype'), url('../fonts/FuturaBT-BoldCondensed.woff2') format('woff2'), url('../fonts/FuturaBT-BoldCondensed.woff') format('woff'), url('../fonts/FuturaBT-BoldCondensed.ttf') format('truetype'), url('../fonts/FuturaBT-BoldCondensed.svg#FuturaBT-BoldCondensed') format('svg');
-    font-weight: bold;
+    font-family: 'Futura';
+    src: url('../fonts/Futura-Bold.eot');
+    src: url('../fonts/Futura-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Futura-Bold.woff2') format('woff2'), url('../fonts/Futura-Bold.woff') format('woff'), url('../fonts/Futura-Bold.ttf') format('truetype'), url('../fonts/Futura-Bold.svg#Futura-Bold') format('svg');
+    font-weight: 700;
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Lt BT';
+    src: url('../fonts/FuturaBT-LightItalic.eot');
+    src: url('../fonts/FuturaBT-LightItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/FuturaBT-LightItalic.woff2') format('woff2'), url('../fonts/FuturaBT-LightItalic.woff') format('woff'), url('../fonts/FuturaBT-LightItalic.ttf') format('truetype'), url('../fonts/FuturaBT-LightItalic.svg#FuturaBT-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
     font-display: swap;
 }
