@@ -1,27 +1,36 @@
 $darkturquoise: #46AFC0;
+$mediumturquoise: #44ADBF;
 $skyblue: #7DC1D1;
 $steelblue: #5A7591;
 $slategrey: #3B4B5B;
 $powderblue: #A4CFD8;
+$lightblue: #CFEBF1;
 $chocolate: #BF6F46;
 $burlywood: #DBB091;
 $lightsteelblue: #8F9FB1;
 $lightslategrey: #606E7B;
 $red: #EE2F3F;
 $white: #FFFFFF;
+$whitesmoke: #F7F8FA;
 $black: #15232B;
 $springgreen: #32E28E;
 h1,
-h2 {
+h2,
+h3 {
     font-family: 'Futura';
     color: $white;
+    margin-bottom: 0;
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 36px;
 }
 
 h2 {
+    font-size: 30px;
+}
+
+h3 {
     font-size: 28px;
 }
 
@@ -45,6 +54,10 @@ h2 {
     font-size: 18px;
 }
 
+.font-size-24 {
+    font-size: 24px;
+}
+
 .text-info {
     color: $skyblue!important;
 }
@@ -53,8 +66,32 @@ h2 {
     color: $black!important;
 }
 
+.text-primary {
+    color: $steelblue!important;
+}
+
+.text-warning {
+    color: $chocolate!important;
+}
+
+.bg-primary {
+    background-color: $steelblue!important;
+}
+
+.bg-info {
+    background-color: $skyblue!important;
+}
+
+.bg-warning {
+    background-color: $chocolate!important;
+}
+
 .pt-36px {
     padding-top: 36px;
+}
+
+.pb-80px {
+    padding-bottom: 80px;
 }
 
 .mb-34px {

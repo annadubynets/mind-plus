@@ -77,3 +77,26 @@ function closeAllSelect(elmnt) {
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
+
+
+if ($('.owl-carousel').length > 0) {
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        autoplay: false,
+        responsive: {
+            0: {
+                items: 3,
+                stagePadding: 40,
+                nav: true
+            },
+            992: {
+                items: 3,
+                stagePadding: 40,
+                nav: true,
+                loop: false
+            }
+        }
+    })
+}
