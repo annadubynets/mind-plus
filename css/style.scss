@@ -110,7 +110,6 @@ ul {
 .alert-dismissible .btn-close {
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 16.8089L10.2822 9.99718C12.4778 7.70121 14.6443 5.296 16.8399 3.00003' stroke='%235A7591' stroke-width='6'/%3E%3Cpath d='M3.1604 17L10.127 9.99718C7.74193 7.76519 5.38526 5.42316 3.00024 3.19117' stroke='%235A7591' stroke-width='6'/%3E%3C/svg%3E ");
     margin-top: 16px;
-    width: 0;
     &:focus {
         box-shadow: none;
     }
