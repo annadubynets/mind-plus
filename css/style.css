@@ -5,7 +5,6 @@
 h1,
 h2,
 h3 {
-  font-family: "Futura";
   color: #FFFFFF;
   margin-bottom: 0;
 }
@@ -15,11 +14,16 @@ h1 {
 }
 
 h2 {
+  font-family: "Futura";
   font-size: 30px;
 }
 
 h3 {
   font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
 }
 
 .font-size-10 {
@@ -91,7 +95,7 @@ h3 {
 }
 
 body {
-  font-family: "Futura Mt BT", sans-serif;
+  font-family: "Futura Lt BT", sans-serif;
 }
 
 a {
