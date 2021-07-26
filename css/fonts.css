@@ -36,8 +36,8 @@
 
 @font-face {
     font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?qbzhfj');
-    src: url('../fonts/icomoon.eot?qbzhfj#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?qbzhfj') format('truetype'), url('../fonts/icomoon.woff?qbzhfj') format('woff'), url('../fonts/icomoon.svg?qbzhfj#icomoon') format('svg');
+    src: url('../fonts/icomoon.eot?4rnqnu');
+    src: url('../fonts/icomoon.eot?4rnqnu#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?4rnqnu') format('truetype'), url('../fonts/icomoon.woff?4rnqnu') format('woff'), url('../fonts/icomoon.svg?4rnqnu#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -58,6 +58,52 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow:before {
+.icon-skills:before {
+    content: "\e90a";
+    color: #3b4b5b;
+}
+
+.icon-dropdown-arrow:before {
+    content: "\e905";
+    color: #5a7591;
+}
+
+.icon-next-evaluation:before {
+    content: "\e906";
+    color: #5a7591;
+}
+
+.icon-up-dropdown-arrow:before {
+    content: "\e907";
+    color: #5a7591;
+}
+
+.icon-exit:before {
+    content: "\e908";
+    color: #5a7591;
+}
+
+.icon-back-arrow:before {
+    content: "\e909";
+    color: #fff;
+}
+
+.icon-evaluation-main-menu:before {
+    content: "\e900";
+}
+
+.icon-account-main-menu:before {
+    content: "\e901";
+}
+
+.icon-play-main-menu:before {
+    content: "\e902";
+}
+
+.icon-progress-main-menu:before {
+    content: "\e903";
+}
+
+.icon-train-main-menu:before {
     content: "\e904";
 }
