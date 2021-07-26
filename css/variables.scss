@@ -16,7 +16,9 @@ $black: #15232B;
 $springgreen: #32E28E;
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
     color: $white;
     margin-bottom: 0;
 }
@@ -58,6 +60,10 @@ h4 {
     font-size: 18px;
 }
 
+.font-size-20 {
+    font-size: 20px;
+}
+
 .font-size-24 {
     font-size: 24px;
 }
@@ -88,6 +94,11 @@ h4 {
 
 .bg-warning {
     background-color: $chocolate!important;
+}
+
+.fw-bolder {
+    font-family: 'Futura Md BT';
+    font-weight: 500!important;
 }
 
 .pt-36px {

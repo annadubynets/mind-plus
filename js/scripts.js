@@ -92,7 +92,7 @@ if ($('.owl-carousel').length > 0) {
                 nav: true
             },
             992: {
-                items: 3,
+                items: 5,
                 stagePadding: 40,
                 nav: true,
                 loop: false
