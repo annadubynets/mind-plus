@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindPlus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="main min-vh-100 pt-36px pb-140px">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-12 px-4">
+                    <h1 class="mb-3">Progress
+                    </h1>
+
+                    <div class="alert alert-info alert-dismissible fade show d-flex text-start" role="alert">
+                        <div class="me-2">
+                            <div class="alert-circle-style rounded-circle">
+                                <img src="images/alert.svg" alt="alert message">
+                            </div>
+                        </div>
+
+                        <p class="text-dark">Your evolution shows the score of your last session and the goal to achieve in your next training session.</p>
+                        <button type="button" class="btn-close ps-2" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+
+                    <img src="images/graphic.svg">
+
+                    <div class="row my-4">
+                        <div class="col-12 text-center">
+                            <div class="bg-light p-3 rounded-pill-30px mb-2">
+                                <div class="row">
+                                    <div class="col-3 col-md-2">
+                                        <div class="alert-circle-style bg-primary rounded-circle">
+                                            <img src="images/general-evaluation.svg" alt="general evaluation">
+                                        </div>
+                                    </div>
+                                    <div class="col-9 col-md-10">
+                                        <h4 class="text-primary text-start mb-0">General Cognitive Evaluation</h4>
+                                    </div>
+
+                                    <button type="button" class="btn btn-info w-100 mt-42px mb-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Start now</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="text-end">
+                                            <button type="button" class="btn-close ps-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div class="modal-dialog progress-dialog px-4">
+                                            <div class="modal-content">
+                                                <p class="font-size-39 text-white mb-5 text-start">Hello, Welcome to Mind+!</p>
+                                                <p class="font-size-28 text-white text-start mb-5">Take a complete traing session or evaluation to see your cognitive results.</p>
+
+                                                <div class="d-grid">
+                                                    <a href="progress-few-times.html" class="btn btn-info">Start now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-5 text-start">
+                                        <p><span class="icon-time pe-2"></span>10 Minutes</p>
+                                    </div>
+                                    <div class="col-5 text-start">
+                                        <p><span class="icon-skills pe-2"></span>5 Skills</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar footer-navbar fixed-bottom navbar-light bg-light justify-content-around p-4">
+            <a href="play.html" class="text-center"><span class="icon-play-main-menu d-block pb-2"></span>Play</a>
+            <a href="evaluation.html" class="text-center"><span class="icon-evaluation-main-menu d-block pb-2"></span>Evaluation</a>
+            <a href="train.html" class="text-center"><span class="icon-train-main-menu d-block pb-2"></span>Train</a>
+            <a href="progress.html" class="active text-center"><span class="icon-progress-main-menu d-block pb-2"></span>Progress</a>
+            <a href="profile.html" class="text-center"><span class="icon-account-main-menu d-block pb-2"></span>Account</a>
+        </nav>
+    </section>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

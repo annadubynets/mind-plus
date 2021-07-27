@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "./bootstrap.min.css";
 @import "./owl.carousel.min.css";
 @import "./owl.theme.default.min.css";
@@ -41,7 +42,7 @@ h4 {
 }
 
 .font-size-16 {
-  font-size: 16px;
+  font-size: 16px !important;
 }
 
 .font-size-18 {
@@ -54,6 +55,14 @@ h4 {
 
 .font-size-24 {
   font-size: 24px;
+}
+
+.font-size-28 {
+  font-size: 28px;
+}
+
+.font-size-39 {
+  font-size: 39px;
 }
 
 .text-info {
@@ -80,8 +89,28 @@ h4 {
   background-color: #7DC1D1 !important;
 }
 
+.bg-progress {
+  background-color: #44ADBF !important;
+}
+
+.bg-gold {
+  background-color: #DFAD94 !important;
+}
+
+.bg-progress-gold {
+  background-color: #FBBB93 !important;
+}
+
 .bg-warning {
   background-color: #BF6F46 !important;
+}
+
+.border-color-info {
+  border-color: #44ADBF !important;
+}
+
+.border-color-warning {
+  border-color: #BF6F46 !important;
 }
 
 .fw-bolder {
@@ -91,6 +120,10 @@ h4 {
 
 .pt-36px {
   padding-top: 36px;
+}
+
+.mt-42px {
+  margin-top: 42px;
 }
 
 .pb-80px {
@@ -155,6 +188,22 @@ p {
   color: #FFFFFF;
   background-color: #7DC1D1;
   border: none;
+  box-shadow: none;
+}
+
+.btn-check:focus + .btn-info,
+.btn-info:focus {
+  color: #FFFFFF;
+  background-color: #7DC1D1;
+  border-color: #7DC1D1;
+  box-shadow: none;
+}
+
+.btn-check:active + .btn-info:focus,
+.btn-check:checked + .btn-info:focus,
+.btn-info.active:focus,
+.btn-info:active:focus,
+.show > .btn-info.dropdown-toggle:focus {
   box-shadow: none;
 }
 
@@ -265,6 +314,16 @@ ul {
 .modal-dialog .modal-content {
   background: #F7F8F9;
   border-radius: 30px;
+}
+
+.modal-dialog.progress-dialog .modal-content {
+  background: transparent;
+  border: none;
+}
+
+.modal-backdrop {
+  background: linear-gradient(97.09deg, #132028 3.83%, #395765 98.1%);
+  background: rgba(34, 45, 55, 0.9);
 }
 
 .btn-close {
@@ -397,6 +456,216 @@ ul {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.card {
+  background: #F7F8FA;
+  border-radius: 11px;
+  border: none;
+}
+.card .card-header {
+  background: linear-gradient(90.1deg, #9BB5D1 6.71%, rgba(65, 88, 113, 0.91) 97.67%);
+  border-bottom: none;
+  color: #FFFFFF;
+  border-radius: 11px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 20px 24px;
+  font-family: "Futura Md BT";
+  font-size: 18px !important;
+}
+.card .card-body {
+  padding: 30px 14px;
+}
+
+.accordion-button {
+  background-color: transparent !important;
+  font-family: "Futura Md BT";
+  font-size: 12px !important;
+  color: #5A7591;
+  padding: 0 0 15px 0;
+}
+.accordion-button span {
+  font-size: 16px !important;
+  padding-top: 6px;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-button::after {
+  font-family: "icomoon";
+  content: "";
+  color: #5a7591;
+  background-image: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #5A7591;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+}
+
+.accordion-item {
+  background-color: transparent !important;
+  border: none;
+}
+
+.accordion-body {
+  font-family: "Futura Md BT";
+  color: #5A7591;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 4px 0 15px;
+}
+
+.progress {
+  height: 12px;
+  background-color: #5A7591;
+  border-radius: 72px;
+}
+
+.progress-circle.progress {
+  width: 48px;
+  height: 48px !important;
+  background: none;
+  box-shadow: none;
+  position: relative;
+}
+
+.progress-circle.progress.progress-circle-primary:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 12px solid #CFEBF1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress-circle.progress.progress-circle-warning:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 12px solid rgba(219, 176, 145, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress-circle.progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.progress-circle.progress .progress-left {
+  left: 0;
+}
+
+.progress-circle.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 12px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+
+.progress-circle.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.progress-circle.progress .progress-right {
+  right: 0;
+}
+
+.progress-circle.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+  animation: loading-1 1.8s linear forwards;
+}
+
+.progress-circle.progress .progress-value {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: transparent;
+  font-size: 24px;
+  color: #fff;
+  line-height: 135px;
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.progress-circle.progress.blue .progress-bar {
+  border-color: #44ADBF;
+}
+
+.progress-circle.progress.blue .progress-left .progress-bar {
+  animation: loading-2 1.5s linear forwards 1.8s;
+}
+
+.progress-circle.progress.yellow .progress-bar {
+  border-color: #DF6729;
+}
+
+.progress-circle.progress.yellow .progress-right .progress-bar {
+  animation: loading-3 1.8s linear forwards;
+}
+
+.progress-circle.progress.yellow .progress-left .progress-bar {
+  animation: none;
+}
+
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(144deg);
+    transform: rotate(144deg);
+  }
+}
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

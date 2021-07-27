@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindPlus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="main min-vh-100 pt-36px pb-140px">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-12 px-4">
+                    <h1 class="mb-3">Progress
+                    </h1>
+
+                    <img src="images/graphic.svg">
+
+                    <div class="card my-4">
+                        <div class="card-header">
+                            Personalized Brain Training
+                        </div>
+                        <div class="card-body">
+                            <p class="font-size-18 fw-bold">Start traning now!</p>
+
+                            <div class="row py-4">
+                                <div class="col-3 text-center">
+                                    <img src="images/personal-train-1.svg" class="rounded" alt="Personal training">
+                                </div>
+                                <div class="col-3 text-center">
+                                    <img src="images/personal-train-2.svg" class="rounded" alt="Personal training">
+                                </div>
+                                <div class="col-3 text-center">
+                                    <img src="images/personal-train-3.svg" class="rounded" alt="Personal training">
+                                </div>
+                                <div class="col-3 text-center">
+                                    <img src="images/personal-train-4.svg" class="rounded" alt="Personal training">
+                                </div>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-info">Start now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-info alert-dismissible fade show d-flex text-start mb-4" role="alert">
+                        <div class="me-2">
+                            <div class="alert-circle-style rounded-circle">
+                                <img src="images/alert.svg" alt="alert message">
+                            </div>
+                        </div>
+
+                        <p class="text-dark">The 23 cognitive skills are grouped into 5 large cognitive areas, resposible for your performance in daily tasks</p>
+                        <button type="button" class="btn-close ps-2" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            Cognitive areas
+                        </div>
+                        <div class="card-body">
+                            <div class="row row-cols-5">
+                                <div class="col text-center px-1">
+                                    <p class="font-size-10 pb-2"><span class="d-block font-size-13">403</span>Reasoning</p>
+                                    <div class="progress-circle progress-circle-primary progress blue mx-auto">
+                                        <span class="progress-left"> <span class="progress-bar"></span></span>
+                                        <span class="progress-right"> <span class="progress-bar"></span></span>
+                                        <div class="progress-value"></div>
+                                    </div>
+                                </div>
+                                <div class="col text-center px-1">
+                                    <p class="font-size-10 pb-2"><span class="d-block font-size-13">480</span>Cordination</p>
+                                    <div class="progress-circle progress-circle-primary progress blue mx-auto">
+                                        <span class="progress-left"> <span class="progress-bar"></span></span>
+                                        <span class="progress-right"> <span class="progress-bar"></span></span>
+                                        <div class="progress-value"></div>
+                                    </div>
+                                </div>
+                                <div class="col text-center px-1">
+                                    <p class="font-size-10 pb-2"><span class="d-block font-size-13">374</span>Memory</p>
+                                    <div class="progress-circle progress-circle-warning progress yellow mx-auto">
+                                        <span class="progress-left"> <span class="progress-bar"></span></span>
+                                        <span class="progress-right"> <span class="progress-bar"></span></span>
+                                        <div class="progress-value"></div>
+                                    </div>
+                                </div>
+                                <div class="col text-center px-1">
+                                    <p class="font-size-10 pb-2"><span class="d-block font-size-13">486</span>Perception</p>
+                                    <div class="progress-circle progress-circle-primary progress blue mx-auto">
+                                        <span class="progress-left"> <span class="progress-bar"></span></span>
+                                        <span class="progress-right"> <span class="progress-bar"></span></span>
+                                        <div class="progress-value"></div>
+                                    </div>
+                                </div>
+                                <div class="col text-center px-1">
+                                    <p class="font-size-10 pb-2"><span class="d-block font-size-13">303</span>Concentration</p>
+                                    <div class="progress-circle progress-circle-warning progress yellow mx-auto">
+                                        <span class="progress-left"> <span class="progress-bar"></span></span>
+                                        <span class="progress-right"> <span class="progress-bar"></span></span>
+                                        <div class="progress-value"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-info alert-dismissible fade show d-flex text-start mb-4" role="alert">
+                        <div class="me-2">
+                            <div class="alert-circle-style rounded-circle">
+                                <img src="images/alert.svg" alt="alert message">
+                            </div>
+                        </div>
+
+                        <p class="text-dark">Learn about the meaning of each cognitive skill by clicking on each one</p>
+                        <button type="button" class="btn-close ps-2" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            Cognitive skills
+                        </div>
+                        <div class="card-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            <div class="d-flex w-100 pe-3">
+                                                <div class="alert-circle-style rounded-circle me-3">
+                                                    <img src="images/inhibition.svg" alt="inhibition">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    Inhibition
+                                                    <div class="progress mt-2 mb-1">
+                                                        <div class="progress-bar bg-progress w-80" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span>650</span>
+                                                </div>
+                                            </div>
+                                    </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"> Inhibition or inhibitory control is the ability to inhibit or control impulsive (or automatic) responses, and create responses by using attention and reasoning. This cognitive ability is one of our Executive Functions
+                                            and contributes to anticipation, planning, and goal setting. Inhibition or inhibitory control blocks behaviors and stops inappropriate automatic reactions, changing one response for a better, more thought-out
+                                            response adapted to the situation</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            <div class="d-flex w-100 pe-3">
+                                                <div class="alert-circle-style rounded-circle me-3">
+                                                    <img src="images/monitoring.svg" alt="monitoring">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    Monitoring
+                                                    <div class="progress mt-2 mb-1">
+                                                        <div class="progress-bar bg-progress w-75" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span>580</span>
+                                                </div>
+                                            </div>
+                                    </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"> Inhibition or inhibitory control is the ability to inhibit or control impulsive (or automatic) responses, and create responses by using attention and reasoning. This cognitive ability is one of our Executive Functions
+                                            and contributes to anticipation, planning, and goal setting. Inhibition or inhibitory control blocks behaviors and stops inappropriate automatic reactions, changing one response for a better, more thought-out
+                                            response adapted to the situation</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            <div class="d-flex w-100 pe-3">
+                                                <div class="alert-circle-style bg-gold rounded-circle me-3">
+                                                    <img src="images/response-time.svg" alt="response time">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    Response Time
+                                                    <div class="progress mt-2 mb-1">
+                                                        <div class="progress-bar bg-progress-gold w-50" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span>374</span>
+                                                </div>
+                                            </div>
+                                    </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"> Inhibition or inhibitory control is the ability to inhibit or control impulsive (or automatic) responses, and create responses by using attention and reasoning. This cognitive ability is one of our Executive Functions
+                                            and contributes to anticipation, planning, and goal setting. Inhibition or inhibitory control blocks behaviors and stops inappropriate automatic reactions, changing one response for a better, more thought-out
+                                            response adapted to the situation</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFour">
+                                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                            <div class="d-flex w-100 pe-3">
+                                                <div class="alert-circle-style rounded-circle me-3">
+                                                    <img src="images/naming.svg" alt="naming">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    Naming
+                                                    <div class="progress mt-2 mb-1">
+                                                        <div class="progress-bar bg-progress w-60" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span>486</span>
+                                                </div>
+                                            </div>
+                                    </button>
+                                    </h2>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"> Inhibition or inhibitory control is the ability to inhibit or control impulsive (or automatic) responses, and create responses by using attention and reasoning. This cognitive ability is one of our Executive Functions
+                                            and contributes to anticipation, planning, and goal setting. Inhibition or inhibitory control blocks behaviors and stops inappropriate automatic reactions, changing one response for a better, more thought-out
+                                            response adapted to the situation</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFive">
+                                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                            <div class="d-flex w-100 pe-3">
+                                                <div class="alert-circle-style bg-warning rounded-circle me-3">
+                                                    <img src="images/estimation.svg" alt="estimation">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    Estimation
+                                                    <div class="progress mt-2 mb-1">
+                                                        <div class="progress-bar bg-warning w-30" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span>303</span>
+                                                </div>
+                                            </div>
+                                    </button>
+                                    </h2>
+                                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"> Inhibition or inhibitory control is the ability to inhibit or control impulsive (or automatic) responses, and create responses by using attention and reasoning. This cognitive ability is one of our Executive Functions
+                                            and contributes to anticipation, planning, and goal setting. Inhibition or inhibitory control blocks behaviors and stops inappropriate automatic reactions, changing one response for a better, more thought-out
+                                            response adapted to the situation</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingSix">
+                                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                            <div class="d-flex w-100 pe-3">
+                                                <div class="alert-circle-style rounded-circle me-3">
+                                                    <img src="images/perception.svg" alt="perception">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    Visual Perception
+                                                    <div class="progress mt-2 mb-1">
+                                                        <div class="progress-bar bg-progress w-40" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span>330</span>
+                                                </div>
+                                            </div>
+                                    </button>
+                                    </h2>
+                                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"> Inhibition or inhibitory control is the ability to inhibit or control impulsive (or automatic) responses, and create responses by using attention and reasoning. This cognitive ability is one of our Executive Functions
+                                            and contributes to anticipation, planning, and goal setting. Inhibition or inhibitory control blocks behaviors and stops inappropriate automatic reactions, changing one response for a better, more thought-out
+                                            response adapted to the situation</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingSeven">
+                                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                            <div class="d-flex w-100 pe-3">
+                                                <div class="alert-circle-style rounded-circle me-3">
+                                                    <img src="images/exploration.svg" alt="exploration">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    Visual Exploration
+                                                    <div class="progress mt-2 mb-1">
+                                                        <div class="progress-bar bg-progress w-70" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span>600</span>
+                                                </div>
+                                            </div>
+                                    </button>
+                                    </h2>
+                                    <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"> Inhibition or inhibitory control is the ability to inhibit or control impulsive (or automatic) responses, and create responses by using attention and reasoning. This cognitive ability is one of our Executive Functions
+                                            and contributes to anticipation, planning, and goal setting. Inhibition or inhibitory control blocks behaviors and stops inappropriate automatic reactions, changing one response for a better, more thought-out
+                                            response adapted to the situation</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingEight">
+                                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                                            <div class="d-flex w-100 pe-3">
+                                                <div class="alert-circle-style bg-warning rounded-circle me-3">
+                                                    <img src="images/memory-short-auditory.svg" alt="Short Term auditory Memory">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    Short Term auditory Memory
+                                                    <div class="progress mt-2 mb-1">
+                                                        <div class="progress-bar bg-warning w-25" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span>208</span>
+                                                </div>
+                                            </div>
+                                    </button>
+                                    </h2>
+                                    <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"> Inhibition or inhibitory control is the ability to inhibit or control impulsive (or automatic) responses, and create responses by using attention and reasoning. This cognitive ability is one of our Executive Functions
+                                            and contributes to anticipation, planning, and goal setting. Inhibition or inhibitory control blocks behaviors and stops inappropriate automatic reactions, changing one response for a better, more thought-out
+                                            response adapted to the situation</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingNine">
+                                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                                            <div class="d-flex w-100 pe-3">
+                                                <div class="alert-circle-style rounded-circle me-3">
+                                                    <img src="images/memory-short-time.svg" alt="Short Term Memory">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    Short Term Memory
+                                                    <div class="progress mt-2 mb-1">
+                                                        <div class="progress-bar bg-progress w-75" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span>623</span>
+                                                </div>
+                                            </div>
+                                    </button>
+                                    </h2>
+                                    <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"> Inhibition or inhibitory control is the ability to inhibit or control impulsive (or automatic) responses, and create responses by using attention and reasoning. This cognitive ability is one of our Executive Functions
+                                            and contributes to anticipation, planning, and goal setting. Inhibition or inhibitory control blocks behaviors and stops inappropriate automatic reactions, changing one response for a better, more thought-out
+                                            response adapted to the situation</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTen">
+                                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                                            <div class="d-flex w-100 pe-3">
+                                                <div class="alert-circle-style bg-warning rounded-circle me-3">
+                                                    <img src="images/non-verbal-memory.svg" alt="Non verbal Memory">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    Non verbal Memory
+                                                    <div class="progress mt-2 mb-1">
+                                                        <div class="progress-bar bg-warning w-35" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span>303</span>
+                                                </div>
+                                            </div>
+                                    </button>
+                                    </h2>
+                                    <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"> Inhibition or inhibitory control is the ability to inhibit or control impulsive (or automatic) responses, and create responses by using attention and reasoning. This cognitive ability is one of our Executive Functions
+                                            and contributes to anticipation, planning, and goal setting. Inhibition or inhibitory control blocks behaviors and stops inappropriate automatic reactions, changing one response for a better, more thought-out
+                                            response adapted to the situation</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingEleven">
+                                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+                                            <div class="d-flex w-100 pe-3">
+                                                <div class="alert-circle-style bg-gold rounded-circle me-3">
+                                                    <img src="images/work-memory.svg" alt="Work Memory">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    Work Memory
+                                                    <div class="progress mt-2 mb-1">
+                                                        <div class="progress-bar bg-progress-gold w-50" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span>3385</span>
+                                                </div>
+                                            </div>
+                                    </button>
+                                    </h2>
+                                    <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"> Inhibition or inhibitory control is the ability to inhibit or control impulsive (or automatic) responses, and create responses by using attention and reasoning. This cognitive ability is one of our Executive Functions
+                                            and contributes to anticipation, planning, and goal setting. Inhibition or inhibitory control blocks behaviors and stops inappropriate automatic reactions, changing one response for a better, more thought-out
+                                            response adapted to the situation</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwelve">
+                                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+                                            <div class="d-flex w-100 pe-3">
+                                                <div class="alert-circle-style bg-gold rounded-circle me-3">
+                                                    <img src="images/concentration.svg" alt="Concentration">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    Concentration
+                                                    <div class="progress mt-2 mb-1">
+                                                        <div class="progress-bar bg-progress-gold w-50" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span>405</span>
+                                                </div>
+                                            </div>
+                                    </button>
+                                    </h2>
+                                    <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"> Inhibition or inhibitory control is the ability to inhibit or control impulsive (or automatic) responses, and create responses by using attention and reasoning. This cognitive ability is one of our Executive Functions
+                                            and contributes to anticipation, planning, and goal setting. Inhibition or inhibitory control blocks behaviors and stops inappropriate automatic reactions, changing one response for a better, more thought-out
+                                            response adapted to the situation</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThirteen">
+                                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThirteen" aria-expanded="false" aria-controls="flush-collapseThirteen">
+                                            <div class="d-flex w-100 pe-3">
+                                                <div class="alert-circle-style rounded-circle me-3">
+                                                    <img src="images/processing-speed.svg" alt="Procession Speed">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    Procession Speed
+                                                    <div class="progress mt-2 mb-1">
+                                                        <div class="progress-bar bg-progress w-75" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span>623</span>
+                                                </div>
+                                            </div>
+                                    </button>
+                                    </h2>
+                                    <div id="flush-collapseThirteen" class="accordion-collapse collapse" aria-labelledby="flush-headingThirteen" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"> Inhibition or inhibitory control is the ability to inhibit or control impulsive (or automatic) responses, and create responses by using attention and reasoning. This cognitive ability is one of our Executive Functions
+                                            and contributes to anticipation, planning, and goal setting. Inhibition or inhibitory control blocks behaviors and stops inappropriate automatic reactions, changing one response for a better, more thought-out
+                                            response adapted to the situation</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFourteen">
+                                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen">
+                                            <div class="d-flex w-100 pe-3">
+                                                <div class="alert-circle-style rounded-circle me-3">
+                                                    <img src="images/visual-short-memory.svg" alt="Short-therm Visual Memory">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    Short-therm Visual Memory
+                                                    <div class="progress mt-2 mb-1">
+                                                        <div class="progress-bar bg-progress w-75" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span>623</span>
+                                                </div>
+                                            </div>
+                                    </button>
+                                    </h2>
+                                    <div id="flush-collapseFourteen" class="accordion-collapse collapse" aria-labelledby="flush-headingFourteen" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"> Inhibition or inhibitory control is the ability to inhibit or control impulsive (or automatic) responses, and create responses by using attention and reasoning. This cognitive ability is one of our Executive Functions
+                                            and contributes to anticipation, planning, and goal setting. Inhibition or inhibitory control blocks behaviors and stops inappropriate automatic reactions, changing one response for a better, more thought-out
+                                            response adapted to the situation</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFifteen">
+                                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFifteen" aria-expanded="false" aria-controls="flush-collapseFifteen">
+                                            <div class="d-flex w-100 pe-3">
+                                                <div class="alert-circle-style rounded-circle me-3">
+                                                    <img src="images/contextual.svg" alt="Contextual Memory">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    Contextual Memory
+                                                    <div class="progress mt-2 mb-1">
+                                                        <div class="progress-bar bg-progress w-75" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span>623</span>
+                                                </div>
+                                            </div>
+                                    </button>
+                                    </h2>
+                                    <div id="flush-collapseFifteen" class="accordion-collapse collapse" aria-labelledby="flush-headingFifteen" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"> Inhibition or inhibitory control is the ability to inhibit or control impulsive (or automatic) responses, and create responses by using attention and reasoning. This cognitive ability is one of our Executive Functions
+                                            and contributes to anticipation, planning, and goal setting. Inhibition or inhibitory control blocks behaviors and stops inappropriate automatic reactions, changing one response for a better, more thought-out
+                                            response adapted to the situation</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingSixteen">
+                                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSixteen" aria-expanded="false" aria-controls="flush-collapseSixteen">
+                                            <div class="d-flex w-100 pe-3">
+                                                <div class="alert-circle-style bg-warning rounded-circle me-3">
+                                                    <img src="images/focused-attention.svg" alt="Focused Attention">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    Focused Attention
+                                                    <div class="progress mt-2 mb-1">
+                                                        <div class="progress-bar bg-warning w-30" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span>303</span>
+                                                </div>
+                                            </div>
+                                    </button>
+                                    </h2>
+                                    <div id="flush-collapseSixteen" class="accordion-collapse collapse" aria-labelledby="flush-headingSixteen" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"> Inhibition or inhibitory control is the ability to inhibit or control impulsive (or automatic) responses, and create responses by using attention and reasoning. This cognitive ability is one of our Executive Functions
+                                            and contributes to anticipation, planning, and goal setting. Inhibition or inhibitory control blocks behaviors and stops inappropriate automatic reactions, changing one response for a better, more thought-out
+                                            response adapted to the situation</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingSeventeen">
+                                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeventeen" aria-expanded="false" aria-controls="flush-collapseSeventeen">
+                                            <div class="d-flex w-100 pe-3">
+                                                <div class="alert-circle-style rounded-circle me-3">
+                                                    <img src="images/spatial-perception.svg" alt="Spatial Perception">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    Spatial Perception
+                                                    <div class="progress mt-2 mb-1">
+                                                        <div class="progress-bar bg-progress w-85" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span>712</span>
+                                                </div>
+                                            </div>
+                                    </button>
+                                    </h2>
+                                    <div id="flush-collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="flush-headingSeventeen" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"> Inhibition or inhibitory control is the ability to inhibit or control impulsive (or automatic) responses, and create responses by using attention and reasoning. This cognitive ability is one of our Executive Functions
+                                            and contributes to anticipation, planning, and goal setting. Inhibition or inhibitory control blocks behaviors and stops inappropriate automatic reactions, changing one response for a better, more thought-out
+                                            response adapted to the situation</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingEighteen">
+                                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEighteen" aria-expanded="false" aria-controls="flush-collapseEighteen">
+                                            <div class="d-flex w-100 pe-3">
+                                                <div class="alert-circle-style rounded-circle me-3">
+                                                    <img src="images/recognition.svg" alt="Recognition">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    Recognition
+                                                    <div class="progress mt-2 mb-1">
+                                                        <div class="progress-bar bg-progress w-55" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span>578</span>
+                                                </div>
+                                            </div>
+                                    </button>
+                                    </h2>
+                                    <div id="flush-collapseEighteen" class="accordion-collapse collapse" aria-labelledby="flush-headingEighteen" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"> Inhibition or inhibitory control is the ability to inhibit or control impulsive (or automatic) responses, and create responses by using attention and reasoning. This cognitive ability is one of our Executive Functions
+                                            and contributes to anticipation, planning, and goal setting. Inhibition or inhibitory control blocks behaviors and stops inappropriate automatic reactions, changing one response for a better, more thought-out
+                                            response adapted to the situation</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingNineteen">
+                                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNineteen" aria-expanded="false" aria-controls="flush-collapseNineteen">
+                                            <div class="d-flex w-100 pe-3">
+                                                <div class="alert-circle-style rounded-circle me-3">
+                                                    <img src="images/audio-memory-short-time.svg" alt="Auditive Perception">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    Auditive Perception
+                                                    <div class="progress mt-2 mb-1">
+                                                        <div class="progress-bar bg-progress w-75" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span>623</span>
+                                                </div>
+                                            </div>
+                                    </button>
+                                    </h2>
+                                    <div id="flush-collapseNineteen" class="accordion-collapse collapse" aria-labelledby="flush-headingNineteen" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"> Inhibition or inhibitory control is the ability to inhibit or control impulsive (or automatic) responses, and create responses by using attention and reasoning. This cognitive ability is one of our Executive Functions
+                                            and contributes to anticipation, planning, and goal setting. Inhibition or inhibitory control blocks behaviors and stops inappropriate automatic reactions, changing one response for a better, more thought-out
+                                            response adapted to the situation</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwenty">
+                                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwenty" aria-expanded="false" aria-controls="flush-collapseTwenty">
+                                            <div class="d-flex w-100 pe-3">
+                                                <div class="alert-circle-style bg-warning rounded-circle me-3">
+                                                    <img src="images/hand-eye-oordination.svg" alt="Hand-Eye Coordination">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    Hand-Eye Coordination
+                                                    <div class="progress mt-2 mb-1">
+                                                        <div class="progress-bar bg-warning w-30" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span>303</span>
+                                                </div>
+                                            </div>
+                                    </button>
+                                    </h2>
+                                    <div id="flush-collapseTwenty" class="accordion-collapse collapse" aria-labelledby="flush-headingTwenty" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"> Inhibition or inhibitory control is the ability to inhibit or control impulsive (or automatic) responses, and create responses by using attention and reasoning. This cognitive ability is one of our Executive Functions
+                                            and contributes to anticipation, planning, and goal setting. Inhibition or inhibitory control blocks behaviors and stops inappropriate automatic reactions, changing one response for a better, more thought-out
+                                            response adapted to the situation</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwentyOne">
+                                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyOne" aria-expanded="false" aria-controls="flush-collapseTwentyOne">
+                                            <div class="d-flex w-100 pe-3">
+                                                <div class="alert-circle-style bg-warning rounded-circle me-3">
+                                                    <img src="images/divided-attention.svg" alt="Divided Attention">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    Divided Attention
+                                                    <div class="progress mt-2 mb-1">
+                                                        <div class="progress-bar bg-warning w-45" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span>365</span>
+                                                </div>
+                                            </div>
+                                    </button>
+                                    </h2>
+                                    <div id="flush-collapseTwentyOne" class="accordion-collapse collapse" aria-labelledby="flush-headingTwentyOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"> Inhibition or inhibitory control is the ability to inhibit or control impulsive (or automatic) responses, and create responses by using attention and reasoning. This cognitive ability is one of our Executive Functions
+                                            and contributes to anticipation, planning, and goal setting. Inhibition or inhibitory control blocks behaviors and stops inappropriate automatic reactions, changing one response for a better, more thought-out
+                                            response adapted to the situation</div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwentyTwo">
+                                        <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyTwo" aria-expanded="false" aria-controls="flush-collapseTwentyTwo">
+                                            <div class="d-flex w-100 pe-3">
+                                                <div class="alert-circle-style bg-warning rounded-circle me-3">
+                                                    <img src="images/cognitive-flexi.svg" alt="Cognitive flexibility">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    Cognitive flexibility
+                                                    <div class="progress mt-2 mb-1">
+                                                        <div class="progress-bar bg-warning w-30" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <span>303</span>
+                                                </div>
+                                            </div>
+                                    </button>
+                                    </h2>
+                                    <div id="flush-collapseTwentyTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwentyTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body"> Inhibition or inhibitory control is the ability to inhibit or control impulsive (or automatic) responses, and create responses by using attention and reasoning. This cognitive ability is one of our Executive Functions
+                                            and contributes to anticipation, planning, and goal setting. Inhibition or inhibitory control blocks behaviors and stops inappropriate automatic reactions, changing one response for a better, more thought-out
+                                            response adapted to the situation</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <nav class="navbar footer-navbar fixed-bottom navbar-light bg-light justify-content-around p-4">
+            <a href="play.html" class="text-center"><span class="icon-play-main-menu d-block pb-2"></span>Play</a>
+            <a href="evaluation.html" class="text-center"><span class="icon-evaluation-main-menu d-block pb-2"></span>Evaluation</a>
+            <a href="train.html" class="text-center"><span class="icon-train-main-menu d-block pb-2"></span>Train</a>
+            <a href="progress.html" class="active text-center"><span class="icon-progress-main-menu d-block pb-2"></span>Progress</a>
+            <a href="profile.html" class="text-center"><span class="icon-account-main-menu d-block pb-2"></span>Account</a>
+        </nav>
+    </section>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

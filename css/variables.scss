@@ -53,7 +53,7 @@ h4 {
 }
 
 .font-size-16 {
-    font-size: 16px;
+    font-size: 16px!important;
 }
 
 .font-size-18 {
@@ -66,6 +66,14 @@ h4 {
 
 .font-size-24 {
     font-size: 24px;
+}
+
+.font-size-28 {
+    font-size: 28px;
+}
+
+.font-size-39 {
+    font-size: 39px;
 }
 
 .text-info {
@@ -92,8 +100,28 @@ h4 {
     background-color: $skyblue!important;
 }
 
+.bg-progress {
+    background-color: $mediumturquoise!important;
+}
+
+.bg-gold {
+    background-color: #DFAD94!important;
+}
+
+.bg-progress-gold {
+    background-color: #FBBB93!important;
+}
+
 .bg-warning {
     background-color: $chocolate!important;
+}
+
+.border-color-info {
+    border-color: $mediumturquoise!important;
+}
+
+.border-color-warning {
+    border-color: $chocolate!important;
 }
 
 .fw-bolder {
@@ -103,6 +131,10 @@ h4 {
 
 .pt-36px {
     padding-top: 36px;
+}
+
+.mt-42px {
+    margin-top: 42px;
 }
 
 .pb-80px {
