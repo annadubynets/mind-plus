@@ -28,7 +28,11 @@
                         <button type="button" class="btn-close ps-2" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
 
-                    <img src="images/graphic.svg" class="w-100">
+                    <div class="row">
+                        <div class="col-12">
+                            <canvas class="chartjs" id="progress-chart" width="400" height="232"></canvas>
+                        </div>
+                    </div>
 
                     <div class="row my-4">
                         <div class="col-12 text-center">
@@ -84,8 +88,45 @@
         </nav>
     </section>
 
-    <script src="js/scripts.js"></script>
+    
+    <script src="js/jquery-1.12.4.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/chartjs-plugin-datalabels.min.js"></script>
+    <script>
+        const labels = ['1', '2', '3'];
+        const ctx = $('#progress-chart');
+        const data = {
+            labels: labels,
+            datasets: [{
+                label: 'My First Dataset',
+                data: [65, 59, 80, 81, 56, 55, 40],
+                fill: true,
+                borderColor: 'rgb(75, 192, 192)',
+                backgroundColor: '#80D7EC',
+                background: '#5A7591',
+                tension: 0.5
+            }]
+        };
+
+        const config = {
+            options: {
+                plugins: {
+                    // Change options for ALL labels of THIS CHART
+                    datalabels: {
+                        color: 'white',
+                        padding: '10px',
+                        offset: 10,
+                    }
+                }
+            },
+            plugins: [ChartDataLabels],
+            type: 'line',
+            data: data,
+        };
+        var myChart = new Chart(ctx, config);
+    </script>
 </body>
 
 </html>
