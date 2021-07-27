@@ -193,6 +193,9 @@ ul {
 .modal-backdrop {
     background: linear-gradient(97.09deg, #132028 3.83%, #395765 98.1%);
     background: rgba(34, 45, 55, 0.9);
+    &.show {
+        opacity: initial;
+    }
 }
 
 .btn-close {
