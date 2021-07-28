@@ -475,8 +475,8 @@ ul {
   border: none;
 }
 .card .card-header {
-  background-image: url("../images/card-header-decor.svg");
-  background-image: url("../images/card-header-decor.svg"), linear-gradient(90.1deg, #9BB5D1 6.71%, rgba(65, 88, 113, 0.91) 97.67%);
+  background-image: url("../images/card-header-decor.png");
+  background-image: url("../images/card-header-decor.png"), linear-gradient(90.1deg, #9BB5D1 6.71%, rgba(65, 88, 113, 0.91) 97.67%);
   border-bottom: none;
   color: #FFFFFF;
   border-radius: 11px;
