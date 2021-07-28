@@ -17,7 +17,11 @@
                     <h1 class="mb-3">Progress
                     </h1>
 
-                    <img src="images/graphic.svg" class="w-100">
+                    <div class="row">
+                        <div class="col-12">
+                            <canvas class="chartjs" id="progress-chart" width="400" height="232"></canvas>
+                        </div>
+                    </div>
 
                     <div class="card my-4">
                         <div class="card-header">
@@ -667,8 +671,19 @@
         </nav>
     </section>
 
-    <script src="js/scripts.js"></script>
+    <script src="js/jquery-1.12.4.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/scripts.js"></script>
+    
+    <script>
+        const ctx = $('#progress-chart');
+
+        const labels = ['1', '2', '3', '4', '5', ''];
+        const values = [0, 222, 240, 250, 300, 400];
+        
+        buildChart(ctx, labels, values, 4);
+    </script>
 </body>
 
 </html>
