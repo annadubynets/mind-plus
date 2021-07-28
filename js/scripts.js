@@ -100,3 +100,151 @@ if ($('.owl-carousel').length > 0) {
         }
     })
 }
+
+/**
+ * Build the progress chart
+ * @canvasElem instance of HTML5 canvas
+ * @labels array of labels
+ * @values array of values
+ */
+function buildChart(canvasElem, labels, values, goalIndex) {
+    const data = {
+        labels: labels,
+        datasets: [{
+            data: values,
+            fill: true,
+            borderColor: 'rgb(75, 192, 192)',
+            backgroundColor: '#80D7EC',
+            background: '#5A7591',
+            tension: 0.6
+        }]
+    };
+
+    const config = {
+        options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                y: {
+                    display: true,
+                    ticks: {
+                        display: false,
+                    }
+                },
+                x: {
+                    ticks: {
+                        color: "#ffffff",
+                        // callback: function(val, index) {
+                        //     return index == labels.length - 1 ? '' : (index + 1) + '';
+                        // },
+                    }
+                }
+            },
+            animation: {
+                duration: 1,
+                onComplete: function () {
+                    var chartInstance = this,
+                        ctx = this.ctx;
+                    ctx.textAlign = 'center';
+                    ctx.strokeStyle = '#ffffff';
+                    ctx.textBaseline = 'bottom';
+
+                    const meta = this.getDatasetMeta(0);
+
+                    this.data.datasets.forEach(function (dataset) {
+                        for (var i = 1; i < dataset.data.length - 1; i++) {
+                            var model = meta.data[i];
+                            ctx.font = '12px, "Futura"';
+                            ctx.fillStyle = '#ffffff';
+
+                            if (i == goalIndex) {
+                                const textDimensions = ctx.measureText('GOAL');
+                                
+                                roundRect(
+                                    ctx, 
+                                    model.x - (textDimensions.width / 2) - 2,
+                                    model.y - textDimensions.fontBoundingBoxAscent * 2 - 2,
+                                    textDimensions.width + 4,  
+                                    textDimensions.fontBoundingBoxAscent * 2 + 4, // we have two lines 
+                                    10, 
+                                    '#ffffff'
+                                );
+
+                                ctx.fillStyle = '#5A7591';
+                                ctx.fillText('GOAL', model.x, model.y - textDimensions.fontBoundingBoxAscent);
+                                ctx.fillText(dataset.data[i], model.x, model.y);
+                            } else {
+                                ctx.fillStyle = '#ffffff';
+                                ctx.fillText(dataset.data[i], model.x, model.y - 5);
+                            }
+                            
+                            ctx.beginPath();
+                            ctx.strokeStyle = '#ffffff';
+                            ctx.lineWidth = 3;
+                            ctx.moveTo(model.x, model.y);
+                            ctx.lineTo(model.x, chartInstance.scales.y.bottom);
+                            ctx.stroke();
+                        }
+                    });
+                }
+            },
+            plugins: {
+                legend: {
+                    labels: {
+                        generateLabels: function() {
+                            return [];
+                        }
+                    },
+                    title: {
+                        display: true,
+                        color: 'white',
+                        text: 'Cognitive score from 0 to 800',
+                        padding: 20,
+                        font: {
+                            name: 'Futura',
+                            weight: 500,
+                        }
+                    }
+                }
+            }
+        },
+        type: 'line',
+        data: data,
+    };
+    return new Chart(ctx, config);
+}
+
+function roundRect(ctx, x, y, width, height, radius, fill, stroke) {
+    if (typeof stroke === 'undefined') {
+        stroke = true;
+    }
+    if (typeof radius === 'undefined') {
+        radius = 5;
+    }
+    if (typeof radius === 'number') {
+        radius = {tl: radius, tr: radius, br: radius, bl: radius};
+    } else {
+        var defaultRadius = {tl: 0, tr: 0, br: 0, bl: 0};
+        for (var side in defaultRadius) {
+        radius[side] = radius[side] || defaultRadius[side];
+        }
+    }
+    ctx.beginPath();
+    ctx.moveTo(x + radius.tl, y);
+    ctx.lineTo(x + width - radius.tr, y);
+    ctx.quadraticCurveTo(x + width, y, x + width, y + radius.tr);
+    ctx.lineTo(x + width, y + height - radius.br);
+    ctx.quadraticCurveTo(x + width, y + height, x + width - radius.br, y + height);
+    ctx.lineTo(x + radius.bl, y + height);
+    ctx.quadraticCurveTo(x, y + height, x, y + height - radius.bl);
+    ctx.lineTo(x, y + radius.tl);
+    ctx.quadraticCurveTo(x, y, x + radius.tl, y);
+    ctx.closePath();
+    if (fill) {
+        ctx.fill();
+    }
+    if (stroke) {
+        ctx.stroke();
+    }
+}
