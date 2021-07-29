@@ -51,28 +51,6 @@
 
                         <div class="d-grid pt-140px">
                             <button type="submit" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Save</button>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                <div class="text-end">
-                                    <button type="button" class="btn-close ps-2" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-
-                                <div class="modal-dialog px-4">
-                                    <div class="modal-content p-4">
-                                        <p class="font-size-18 text-dark mb-4">Are you sure you want to unsubscribe?</p>
-
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Cancel</button>
-                                            </div>
-                                            <div class="col-6">
-                                                <a href="#" class="btn btn-success w-100">Confirm</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </form>
                 </div>
@@ -86,6 +64,28 @@
             <a href="profile.html" class="active text-center"><span class="icon-account-main-menu d-block pb-2"></span>Account</a>
         </nav>
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="text-end">
+            <button type="button" class="btn-close ps-2" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-dialog px-4">
+            <div class="modal-content p-4">
+                <p class="font-size-18 text-dark mb-4">Are you sure you want to unsubscribe?</p>
+
+                <div class="row">
+                    <div class="col-6">
+                        <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="btn btn-success w-100">Confirm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/scripts.js"></script>
     <script src="js/bootstrap.min.js"></script>

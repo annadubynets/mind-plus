@@ -553,16 +553,20 @@ textarea {
 
 .styled-accordion .accordion-button {
   font-family: "Futura Lt BT";
-  font-size: 16px;
+  font-size: 16px !important;
   color: #15232B;
   padding: 0;
+}
+.styled-accordion .accordion-button::after {
+  font-size: 10px;
+  padding-top: 4px;
 }
 .styled-accordion .accordion-button:not(.collapsed) {
   color: #15232B;
 }
 .styled-accordion .accordion-body {
   font-family: "Futura Lt BT";
-  font-size: 16px;
+  font-size: 16px !important;
   background-color: #CFEBF1;
   border: 3px solid #7DC1D1;
   padding: 11px 20px;

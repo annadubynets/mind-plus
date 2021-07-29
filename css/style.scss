@@ -415,16 +415,20 @@ textarea {
 .styled-accordion {
     .accordion-button {
         font-family: 'Futura Lt BT';
-        font-size: 16px;
+        font-size: 16px!important;
         color: $black;
         padding: 0;
+        &::after {
+            font-size: 10px;
+            padding-top: 4px;
+        }
     }
     .accordion-button:not(.collapsed) {
         color: $black;
     }
     .accordion-body {
         font-family: 'Futura Lt BT';
-        font-size: 16px;
+        font-size: 16px!important;
         background-color: $lightblue;
         border: 3px solid $skyblue;
         padding: 11px 20px;
