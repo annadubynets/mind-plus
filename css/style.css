@@ -126,6 +126,10 @@ h4 {
   padding-top: 36px;
 }
 
+.pt-140px {
+  padding-top: 140px;
+}
+
 .mt-42px {
   margin-top: 42px;
 }
@@ -369,6 +373,20 @@ ul {
 .form-control:focus {
   box-shadow: none;
 }
+.form-control::placeholder {
+  color: rgba(96, 110, 123, 0.5);
+  opacity: 1;
+}
+
+.form-label {
+  font-family: "Futura Lt BT";
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+textarea {
+  resize: none;
+}
 
 /* Custom select */
 .custom-select {
@@ -531,6 +549,25 @@ ul {
   font-size: 12px;
   line-height: 16px;
   padding: 4px 0 15px;
+}
+
+.styled-accordion .accordion-button {
+  font-family: "Futura Lt BT";
+  font-size: 16px;
+  color: #15232B;
+  padding: 0;
+}
+.styled-accordion .accordion-button:not(.collapsed) {
+  color: #15232B;
+}
+.styled-accordion .accordion-body {
+  font-family: "Futura Lt BT";
+  font-size: 16px;
+  background-color: #CFEBF1;
+  border: 3px solid #7DC1D1;
+  padding: 11px 20px;
+  color: #15232B;
+  border-radius: 16px;
 }
 
 .progress {

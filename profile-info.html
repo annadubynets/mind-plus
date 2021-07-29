@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindPlus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="main min-vh-100 pt-36px pb-140px">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-12 px-4">
+                    <h1 class="mb-3">Profile</h1>
+
+                    <form>
+                        <div class="mb-3 text-start">
+                            <label for="inputFirstName" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="inputFirstName" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label for="inputLastName" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="inputLastName" placeholder="Your last name">
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label for="inputBirtday" class="form-label">Birthday</label>
+                            <input type="text" class="form-control" id="inputBirtday" placeholder="dd-mm-year">
+                        </div>
+
+                        <div class="mb-5 text-start">
+                            <label for="selectLanguage" class="form-label">Language</label>
+                            <div class="custom-select" id="selectLanguage">
+                                <select>
+                                    <option value="0">English</option>
+                                    <option value="1">Español</option> 
+                                    <option value="2">Français</option>
+                                    <option value="3">עִברִית</option>
+                                    <option value="4">Italiano</option>
+                                    <option value="5">中国人</option>
+                                    <option value="6">한국어</option>
+                              </select>
+                            </div>
+                        </div>
+
+                        <div class="text-start">
+                            <a href="#" class="font-size-12 text-info text-decoration-underline">Leave Mind+ subscription</a>
+                        </div>
+
+                        <div class="d-grid pt-140px">
+                            <button type="submit" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Save</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="text-end">
+                                    <button type="button" class="btn-close ps-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-dialog px-4">
+                                    <div class="modal-content p-4">
+                                        <p class="font-size-18 text-dark mb-4">Are you sure you want to unsubscribe?</p>
+
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Cancel</button>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="#" class="btn btn-success w-100">Confirm</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar footer-navbar fixed-bottom navbar-light bg-light justify-content-around p-4">
+            <a href="play.html" class="text-center"><span class="icon-play-main-menu d-block pb-2"></span>Play</a>
+            <a href="evaluation.html" class="text-center"><span class="icon-evaluation-main-menu d-block pb-2"></span>Evaluation</a>
+            <a href="train.html" class="text-center"><span class="icon-train-main-menu d-block pb-2"></span>Train</a>
+            <a href="progress.html" class="text-center"><span class="icon-progress-main-menu d-block pb-2"></span>Progress</a>
+            <a href="profile.html" class="active text-center"><span class="icon-account-main-menu d-block pb-2"></span>Account</a>
+        </nav>
+    </section>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
