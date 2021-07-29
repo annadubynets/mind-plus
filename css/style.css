@@ -372,6 +372,7 @@ ul {
 }
 .form-control:focus {
   box-shadow: none;
+  border-color: #7DC1D1;
 }
 .form-control::placeholder {
   color: rgba(96, 110, 123, 0.5);

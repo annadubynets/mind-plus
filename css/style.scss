@@ -228,6 +228,7 @@ ul {
     color: $black;
     &:focus {
         box-shadow: none;
+        border-color: $skyblue;
     }
     &::placeholder {
         color: rgba(96, 110, 123, 0.5);
