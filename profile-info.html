@@ -48,11 +48,11 @@
                         </div>
 
                         <div class="text-start">
-                            <a href="#" class="font-size-12 text-info text-decoration-underline">Leave Mind+ subscription</a>
+                            <a class="font-size-12 text-info text-decoration-underline" data-bs-toggle="modal" data-bs-target="#liveSubscription">Leave Mind+ subscription</a>
                         </div>
 
                         <div class="d-grid pt-140px">
-                            <button type="submit" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Save</button>
+                            <button type="button" class="btn btn-info">Save</button>
                         </div>
                     </form>
                 </div>
@@ -68,7 +68,7 @@
     </section>
 
     <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="liveSubscription" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="liveSubscriptionLabel" aria-hidden="true">
         <div class="text-end">
             <button type="button" class="btn-close ps-2" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
@@ -82,13 +82,31 @@
                         <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Cancel</button>
                     </div>
                     <div class="col-6">
-                        <a href="#" class="btn btn-success w-100">Confirm</a>
+                        <button type="button" class="btn btn-info w-100" data-bs-toggle="modal" data-bs-target="#liveSubscriptionConfirmed">Confirm</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="liveSubscriptionConfirmed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="liveSubscriptionConfirmedLabel" aria-hidden="true">
+        <div class="text-end">
+            <button type="button" class="btn-close ps-2" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-dialog px-4">
+            <div class="modal-content p-4">
+                <p class="font-size-18 text-dark mb-4">You are no longer member of Mind+ Please continue your visit at our homepage. </p>
+
+                <div class="row justify-content-center">
+                    <div class="col-6 text-center">
+                        <button type="button" class="btn btn-info w-100" data-bs-toggle="modal" data-bs-target="#liveSubscriptionConfirmed">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/scripts.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
