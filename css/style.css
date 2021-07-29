@@ -13,6 +13,7 @@ h5 {
 }
 
 h1 {
+  font-weight: 600;
   font-size: 36px;
 }
 
@@ -26,7 +27,6 @@ h3 {
 }
 
 h4 {
-  font-family: "Futura LT BT";
   font-weight: 600;
   font-size: 24px;
 }
@@ -482,6 +482,18 @@ textarea {
 }
 .owl-carousel .owl-dots {
   display: none;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: #7DC1D1;
+  margin-right: 25px;
 }
 
 .badge {

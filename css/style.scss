@@ -343,6 +343,18 @@ textarea {
     }
 }
 
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    background-color: $skyblue;
+    margin-right: 25px;
+}
+
 .badge {
     padding: 0;
     width: 29px;
