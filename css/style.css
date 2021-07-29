@@ -261,7 +261,7 @@ ul {
   transform: translate(-50%, -50%);
 }
 
-@media (max-width: 370px) {
+@media (max-width: 414px) {
   .train-circle-style {
     width: 120px;
     height: 120px;
@@ -693,6 +693,10 @@ textarea {
 
 .progress-circle.progress.yellow .progress-left .progress-bar {
   animation: none;
+}
+
+.owl-item {
+  min-width: 100% !important;
 }
 
 @keyframes loading-1 {

@@ -52,7 +52,7 @@
                         </div>
                     </a>
 
-                    <a href="tutorial.html">
+                    <a data-bs-toggle="modal" data-bs-target="#navigation">
                         <div class="bg-light p-3 rounded-pill-16px mb-2">
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="font-size-16 text-dark">Tutorial</p>
@@ -71,6 +71,153 @@
             <a href="profile.html" class="active text-center"><span class="icon-account-main-menu d-block pb-2"></span>Account</a>
         </nav>
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="navigation" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="navigationLabel" aria-hidden="true">
+        <div class="text-end">
+            <button type="button" class="btn-close ps-2 mb-0" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-dialog progress-dialog px-4">
+            <div class="modal-content text-center">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h1 class="mb-4">Navigation Menu</h1>
+
+                            <span class="icon-train-main-menu text-info font-size-28"></span>
+
+                            <h1 class="my-4">Train your brain!</h1>
+
+                            <p class="font-size-18 text-white">The training programs are sessions with witch, through a variety of exercises, you will improve your cognitive skills. </p>
+
+                            <div class="row my-4">
+                                <div class="col-6 text-center mb-3">
+                                    <a href="#">
+                                        <div class="train-circle-style rounded-circle mx-auto">
+                                            <img src="images/personal-train.svg" alt="personal celebral training">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 text-center mb-3">
+                                    <a href="#">
+                                        <div class="train-circle-style rounded-circle mx-auto">
+                                            <img src="images/memory-train.svg" alt="memory training">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 text-center">
+                                    <a href="#">
+                                        <div class="train-circle-style rounded-circle mx-auto">
+                                            <img src="images/mental-math-train.svg" alt="mental math training">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 text-center">
+                                    <a href="#">
+                                        <div class="train-circle-style rounded-circle mx-auto">
+                                            <img src="images/visual-perception.svg" alt="perception training">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <a href="#" class="font-size-12 text-info text-decoration-underline">Swipe to continue </a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <h1 class="mb-4">Navigation Menu</h1>
+
+                            <span class="icon-evaluation-main-menu text-info font-size-28"></span>
+
+                            <h1 class="my-4">Specific Assassements</h1>
+
+                            <p class="font-size-18 text-white pb-4">Your <span class="text-info">brain health</span> comes determinated by your cognitive hablities. Mind
+                                <span class="text-info">+</span> measures 23 cognitive skills and will give your evoluation while you train. </p>
+
+                            <img src="images/tutorial-evaluation.svg" class="w-100 mb-4">
+
+                            <a href="#" class="font-size-12 text-info text-decoration-underline">Swipe to continue </a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <h1 class="mb-4">Navigation Menu</h1>
+
+                            <span class="icon-evaluation-main-menu text-info font-size-28"></span>
+
+                            <h1 class="my-4">Keep your progress!</h1>
+
+                            <p class="font-size-18 text-white pb-4">Mind<span class="text-info">+</span> keeps track of the results and allows you to know your progress <span class="text-info">through time</span>.
+                            </p>
+
+                            <img src="images/tutorial-evaluation.svg" class="w-100 mb-4">
+
+                            <a href="#" class="font-size-12 text-info text-decoration-underline">Swipe to continue </a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <h1 class="mb-4">Navigation Menu</h1>
+
+                            <span class="icon-account-main-menu text-info font-size-28"></span>
+
+                            <h1 class="my-4">Account settings</h1>
+
+                            <p class="font-size-18 text-white pb-4">Change your <span class="text-info">profile info</span> here!
+                            </p>
+
+                            <div class="mb-3 text-start">
+                                <label for="inputFirstName" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="inputFirstName" placeholder="Your Name">
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label for="inputLastName" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="inputLastName" placeholder="Your last name">
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label for="inputBirtday" class="form-label">Birthday</label>
+                                <input type="text" class="form-control" id="inputBirtday" placeholder="dd-mm-year">
+                            </div>
+
+                            <div class="mb-5 text-start">
+                                <label for="selectLanguage" class="form-label">Language</label>
+                                <div class="custom-select" id="selectLanguage">
+                                    <select>
+                                        <option value="0">English</option>
+                                        <option value="1">Español</option> 
+                                        <option value="2">Français</option>
+                                        <option value="3">עִברִית</option>
+                                        <option value="4">Italiano</option>
+                                        <option value="5">中国人</option>
+                                        <option value="6">한국어</option>
+                                  </select>
+                                </div>
+                            </div>
+
+                            <a href="#" class="font-size-12 text-info text-decoration-underline">Swipe to continue </a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <h1 class="mb-4">Cognitive Graph</h1>
+
+                            <p class="font-size-18 text-white pb-5">This cognitive Graph will show your evolution through your <span class="text-info">scores</span>
+                            </p>
+
+                            <img src="images/graphic.svg" class="w-100 pb-5">
+
+                            <a href="#" class="font-size-12 text-info text-decoration-underline">Swipe to continue </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/scripts.js"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -47,23 +47,8 @@
                                         <h4 class="text-primary text-start mb-0">General Cognitive Evaluation</h4>
                                     </div>
 
-                                    <button type="button" class="btn btn-info w-100 mt-42px mb-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Start now</button>
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                        <div class="text-end">
-                                            <button type="button" class="btn-close ps-2" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-
-                                        <div class="modal-dialog progress-dialog px-4">
-                                            <div class="modal-content">
-                                                <p class="font-size-39 text-white mb-5 text-start">Hello, Welcome to Mind+!</p>
-                                                <p class="font-size-28 text-white text-start mb-5">Take a complete traing session or evaluation to see your cognitive results.</p>
-
-                                                <div class="d-grid">
-                                                    <a href="post-result-5.html" class="btn btn-info">Start now</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-info mt-42px mb-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Start now</button>
                                     </div>
 
                                     <div class="col-5 text-start">
@@ -88,18 +73,37 @@
         </nav>
     </section>
 
-    
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="text-end">
+            <button type="button" class="btn-close ps-2" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-dialog progress-dialog px-4">
+            <div class="modal-content">
+                <p class="font-size-39 text-white mb-5 text-start">Hello, Welcome to Mind+!</p>
+                <p class="font-size-28 text-white text-start mb-5">Take a complete traing session or evaluation to see your cognitive results.</p>
+
+                <div class="d-grid">
+                    <a href="post-result-5.html" class="btn btn-info">Start now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/chart.min.js"></script>
     <script src="js/scripts.js"></script>
-    
+
     <script>
         const ctx = $('#progress-chart');
 
         const labels = ['1', '2', '3', '4', '5', ''];
         const values = [0, 222, 240, 250, 300, 400];
-        
+
         buildChart(ctx, labels, values, 4);
     </script>
 </body>

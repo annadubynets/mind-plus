@@ -143,7 +143,7 @@ function buildChart(canvasElem, labels, values, goalIndex) {
             },
             animation: {
                 duration: 1,
-                onComplete: function () {
+                onComplete: function() {
                     var chartInstance = this,
                         ctx = this.ctx;
                     ctx.textAlign = 'center';
@@ -152,7 +152,7 @@ function buildChart(canvasElem, labels, values, goalIndex) {
 
                     const meta = this.getDatasetMeta(0);
 
-                    this.data.datasets.forEach(function (dataset) {
+                    this.data.datasets.forEach(function(dataset) {
                         for (var i = 1; i < dataset.data.length - 1; i++) {
                             var model = meta.data[i];
                             ctx.font = '12px, "Futura"';
@@ -160,14 +160,14 @@ function buildChart(canvasElem, labels, values, goalIndex) {
 
                             if (i == goalIndex) {
                                 const textDimensions = ctx.measureText('GOAL');
-                                
+
                                 roundRect(
-                                    ctx, 
+                                    ctx,
                                     model.x - (textDimensions.width / 2) - 2,
                                     model.y - textDimensions.fontBoundingBoxAscent * 2 - 2,
-                                    textDimensions.width + 4,  
+                                    textDimensions.width + 4,
                                     textDimensions.fontBoundingBoxAscent * 2 + 4, // we have two lines 
-                                    10, 
+                                    10,
                                     '#ffffff'
                                 );
 
@@ -178,7 +178,7 @@ function buildChart(canvasElem, labels, values, goalIndex) {
                                 ctx.fillStyle = '#ffffff';
                                 ctx.fillText(dataset.data[i], model.x, model.y - 5);
                             }
-                            
+
                             ctx.beginPath();
                             ctx.strokeStyle = '#ffffff';
                             ctx.lineWidth = 3;
@@ -223,11 +223,11 @@ function roundRect(ctx, x, y, width, height, radius, fill, stroke) {
         radius = 5;
     }
     if (typeof radius === 'number') {
-        radius = {tl: radius, tr: radius, br: radius, bl: radius};
+        radius = { tl: radius, tr: radius, br: radius, bl: radius };
     } else {
-        var defaultRadius = {tl: 0, tr: 0, br: 0, bl: 0};
+        var defaultRadius = { tl: 0, tr: 0, br: 0, bl: 0 };
         for (var side in defaultRadius) {
-        radius[side] = radius[side] || defaultRadius[side];
+            radius[side] = radius[side] || defaultRadius[side];
         }
     }
     ctx.beginPath();
