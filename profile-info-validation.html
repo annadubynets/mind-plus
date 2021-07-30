@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindPlus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="main min-vh-100 pt-36px pb-140px">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-12 px-4">
+                    <a href="profile.html">
+                        <h1 class="mb-3"><span class="icon-back-arrow font-size-24 pe-2"></span>Profile</h1>
+                    </a>
+
+                    <form>
+                        <div class="mb-3 text-start">
+                            <label for="inputFirstName" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="inputFirstName" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label for="inputLastName" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="inputLastName" placeholder="Your last name">
+                        </div>
+
+                        <div class="mb-3 text-start">
+
+                            <div id="validationInputBirtday" class="invalid-feedback text-start d-block font-size-16 fw-bolder text-danger mt-0">
+                                <label for="inputBirtday" class="form-label">Birthday</label> Please enter a valid date
+                            </div>
+                            <input type="text" class="form-control is-invalid" id="validationInputBirtday" aria-describedby="validationServer03Feedback" required>
+                        </div>
+
+                        <div class="mb-5 text-start">
+                            <label for="selectLanguage" class="form-label">Language</label>
+                            <div class="custom-select" id="selectLanguage">
+                                <select>
+                                    <option value="0">English</option>
+                                    <option value="1">Español</option> 
+                                    <option value="2">Français</option>
+                                    <option value="3">עִברִית</option>
+                                    <option value="4">Italiano</option>
+                                    <option value="5">中国人</option>
+                                    <option value="6">한국어</option>
+                              </select>
+                            </div>
+                        </div>
+
+                        <div class="text-start pb-5">
+                            <a class="font-size-12 text-info text-decoration-underline" data-bs-toggle="modal" data-bs-target="#liveSubscription">Leave Mind+ subscription</a>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="button" class="btn btn-info">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar footer-navbar fixed-bottom navbar-light bg-light justify-content-around p-4">
+            <a href="play.html" class="text-center"><span class="icon-play-main-menu d-block pb-2"></span>Play</a>
+            <a href="evaluation.html" class="text-center"><span class="icon-evaluation-main-menu d-block pb-2"></span>Evaluation</a>
+            <a href="train.html" class="text-center"><span class="icon-train-main-menu d-block pb-2"></span>Train</a>
+            <a href="progress.html" class="text-center"><span class="icon-progress-main-menu d-block pb-2"></span>Progress</a>
+            <a href="profile.html" class="active text-center"><span class="icon-account-main-menu d-block pb-2"></span>Account</a>
+        </nav>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="liveSubscription" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="liveSubscriptionLabel" aria-hidden="true">
+        <div class="text-end">
+            <button type="button" class="btn-close ps-2" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-dialog px-4">
+            <div class="modal-content p-4">
+                <p class="font-size-18 text-dark mb-4">Are you sure you want to unsubscribe?</p>
+
+                <div class="row">
+                    <div class="col-6">
+                        <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-info w-100" data-bs-toggle="modal" data-bs-target="#liveSubscriptionConfirmed">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="liveSubscriptionConfirmed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="liveSubscriptionConfirmedLabel" aria-hidden="true">
+        <div class="text-end">
+            <button type="button" class="btn-close ps-2" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-dialog px-4">
+            <div class="modal-content p-4">
+                <p class="font-size-18 text-dark mb-4">You are no longer member of Mind+ Please continue your visit at our homepage. </p>
+
+                <div class="row justify-content-center">
+                    <div class="col-6 text-center">
+                        <button type="button" class="btn btn-info w-100" data-bs-toggle="modal" data-bs-target="#liveSubscriptionConfirmed">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

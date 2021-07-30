@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindPlus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="wifi min-vh-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-12 text-center px-4">
+                    <div class="card-bg-style p-4 mt-98px">
+                        <img src="images/logo.svg" alt="logo" class="pb-4">
+
+                        <h3 class="mb-4">We couldn't recognize your user.</h3>
+
+                        <p class="text-white font-size-16 text-start mb-4">Please select your Country, Operator and type your mobile number. <br> You will receive a PIN code via Sms.</p>
+
+                        <form>
+                            <div class="mb-4">
+                                <div class="custom-select">
+                                    <select>
+                                        <option value="0">Select country</option>
+                                        <option value="1">Ukraine</option>
+                                        <option value="2">Germany</option>
+                                  </select>
+                                </div>
+                            </div>
+
+                            <div class="mb-2">
+                                <div class="custom-select">
+                                    <select>
+                                        <option value="0">Select a carrier</option>
+                                        <option value="1">Carrier 1</option>
+                                        <option value="2">Carrier 2</option>
+                                  </select>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <div id="validationInputPhone" class="invalid-feedback text-start d-block font-size-16 fw-bolder text-danger mt-0">
+                                    Please enter a valid phone number
+                                </div>
+                                <input type="tel" class="form-control is-invalid" id="validationInputPhone" aria-describedby="validationServer03Feedback" required>
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-info">Subscribe</button>
+                            </div>
+                        </form>
+
+                        <p class="text-white font-size-12 py-3">For only 1EUR/week</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
