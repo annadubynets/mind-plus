@@ -23,6 +23,7 @@ h2 {
 }
 
 h3 {
+  font-weight: 600;
   font-size: 28px;
 }
 
@@ -469,6 +470,7 @@ textarea {
   border-top-right-radius: 30px;
 }
 .navbar.footer-navbar a {
+  font-weight: 600;
   color: #3B4B5B;
   font-size: 16px;
   text-decoration: none;
