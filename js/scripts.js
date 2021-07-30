@@ -248,3 +248,16 @@ function roundRect(ctx, x, y, width, height, radius, fill, stroke) {
         ctx.stroke();
     }
 }
+
+/*
+ DO NOT USER THIS CODE IN THE REAL PROJECT
+ It handles ?rtl=true query param for testing rtl.
+*/
+$(function() {
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const params = Object.fromEntries(urlSearchParams.entries());
+    if (params.rtl == 'true') {
+        $('html').attr('lang', 'ar');
+        $('html').attr('dir', 'rtl');
+    }
+});
