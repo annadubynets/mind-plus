@@ -496,6 +496,10 @@ textarea {
   margin-right: 25px;
 }
 
+.carousel-item {
+  min-height: 612px;
+}
+
 .badge {
   padding: 0;
   width: 29px;
