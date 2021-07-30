@@ -133,6 +133,14 @@ h4 {
   padding-top: 36px;
 }
 
+.pt-67px {
+  padding-top: 67px;
+}
+
+.pt-111px {
+  padding-top: 111px;
+}
+
 .pt-140px {
   padding-top: 140px;
 }
@@ -171,6 +179,7 @@ a {
 
 p {
   margin-bottom: 0;
+  color: #15232B;
 }
 
 .main {
