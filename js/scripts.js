@@ -259,5 +259,13 @@ $(function() {
     if (params.rtl == 'true') {
         $('html').attr('lang', 'ar');
         $('html').attr('dir', 'rtl');
+        
+        $('link[rel=stylesheet]').each(function() {
+            console.log(this);
+            this.disabled=true;
+        });
+
+        $('head').append('<link rel="stylesheet" href="css/bootstrap.rtl.min.css">');
+        $('head').append('<link rel="stylesheet" href="css/style.css"></link>');
     }
 });
