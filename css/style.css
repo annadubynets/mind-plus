@@ -568,6 +568,7 @@ textarea {
 
 .accordion-button:not(.collapsed)::after {
   background-image: none;
+  margin-top: -7px;
 }
 
 .accordion-item {
