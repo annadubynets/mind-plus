@@ -17,7 +17,7 @@
                     <h1 class="mb-3">Progress
                     </h1>
 
-                    <div class="alert alert-info alert-dismissible fade show d-flex text-start" role="alert">
+                    <div class="alert alert-info alert-dismissible fade show d-flex text-start pe-3" role="alert">
                         <div class="me-2">
                             <div class="alert-circle-style rounded-circle">
                                 <img src="images/alert.svg" alt="alert message">
@@ -25,7 +25,9 @@
                         </div>
 
                         <p class="text-dark fw-bold">Your evolution shows the score of your last session and the goal to achieve in your next training session.</p>
-                        <button type="button" class="btn-close ps-2" data-bs-dismiss="alert" aria-label="Close"></button>
+                        <button type="button" class="close ps-2 align-self-baseline" data-bs-dismiss="alert" aria-label="Close">
+                            <span class="icon-exit text-primary"></span>
+                        </button>
                     </div>
 
                     <div class="row">
@@ -76,7 +78,9 @@
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="text-end">
-            <button type="button" class="btn-close ps-2" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="ps-2" data-bs-dismiss="modal" aria-label="Close">
+                <span class="icon-exit text-white"></span>
+            </button>
         </div>
 
         <div class="modal-dialog progress-dialog px-4">
