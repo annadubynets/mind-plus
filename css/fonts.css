@@ -75,7 +75,10 @@
 
 .icon-next-evaluation:before {
     content: "\e906";
-    color: #5a7591;
+}
+
+html[dir="rtl"] .icon-next-evaluation:before {
+    content: "\e909";
 }
 
 .icon-up-dropdown-arrow:before {
@@ -89,7 +92,10 @@
 
 .icon-back-arrow:before {
     content: "\e909";
-    color: #5a7591;
+}
+
+html[dir="rtl"] .icon-back-arrow:before {
+    content: "\e906";
 }
 
 .icon-evaluation-main-menu:before {
