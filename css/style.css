@@ -280,14 +280,67 @@ ul {
   transform: translate(-50%, -50%);
 }
 
-@media (max-width: 414px) {
+@media (max-width: 360px) {
+  .btn {
+    font-size: 14px !important;
+  }
+
+  p {
+    font-size: 13px !important;
+  }
+
+  h1 {
+    font-size: 28px !important;
+  }
+
+  h2 {
+    font-size: 23px !important;
+  }
+
+  h4 {
+    font-size: 18px !important;
+  }
+
+  .alert-info {
+    font-size: 12px !important;
+  }
+
   .train-circle-style {
     width: 120px;
     height: 120px;
   }
 
+  .font-size-20 {
+    font-size: 15px !important;
+  }
+
+  .font-size-16 {
+    font-size: 12px !important;
+  }
+
+  .font-size-14 {
+    font-size: 11px !important;
+  }
+
+  .font-size-13 {
+    font-size: 10px !important;
+  }
+
+  .font-size-12 {
+    font-size: 9px !important;
+  }
+
   .font-size-10 {
-    font-size: 7px;
+    font-size: 8px !important;
+  }
+
+  .navbar.footer-navbar a {
+    font-size: 12px !important;
+  }
+
+  .circle-style {
+    width: 52px;
+    height: 52px;
   }
 }
 .alert-info {
@@ -477,6 +530,31 @@ textarea {
   color: #44ADBF;
 }
 
+.navbar-light .navbar-nav {
+  flex-direction: row;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #FFFFFF;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #44ADBF;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #FFFFFF;
+}
+
+footer {
+  background-image: url("../images/footer-decor.png");
+  background: url("../images/footer-decor.png"), #3B4B5B;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .rounded-pill-30px {
   border-radius: 30px !important;
 }
@@ -495,6 +573,8 @@ textarea {
 
 .carousel-indicators {
   bottom: -50px;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -502,13 +582,29 @@ textarea {
   height: 14px;
   border-radius: 100%;
   background-color: #7DC1D1;
-  margin-right: 25px;
+  margin: 0 15px;
 }
 
-.carousel-item {
-  min-height: 612px;
+@media (min-width: 320px) {
+  .carousel-item {
+    min-height: 450px !important;
+  }
 }
-
+@media (min-width: 360px) {
+  .carousel-item {
+    min-height: 540px !important;
+  }
+}
+@media (min-width: 768px) {
+  .carousel-item {
+    min-height: 800px !important;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-item {
+    min-height: 900px !important;
+  }
+}
 .badge {
   padding: 0;
   width: 29px;

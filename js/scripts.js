@@ -92,7 +92,7 @@ if ($('.owl-carousel').length > 0) {
                 nav: true
             },
             992: {
-                items: 5,
+                items: 11,
                 stagePadding: 40,
                 nav: true,
                 loop: false
@@ -259,10 +259,10 @@ $(function() {
     if (params.rtl == 'true') {
         $('html').attr('lang', 'ar');
         $('html').attr('dir', 'rtl');
-        
+
         $('link[rel=stylesheet]').each(function() {
             console.log(this);
-            this.disabled=true;
+            this.disabled = true;
         });
 
         $('head').append('<link rel="stylesheet" href="css/bootstrap.rtl.min.css">');

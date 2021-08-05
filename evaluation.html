@@ -13,169 +13,218 @@
 <body>
     <section class="main min-vh-100 pt-36px pb-140px">
         <div class="container">
+            <nav class="navbar navbar-light d-lg-flex d-none pb-80px">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="images/logo.svg" class="navbar-brand-img" alt="logo">
+                </a>
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-3">
+                        <a href="play.html" class="nav-link text-center"><span class="icon-play-main-menu pe-3"></span>Play</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="evaluation.html" class="nav-link active text-center"><span class="icon-evaluation-main-menu pe-3"></span>Evaluation</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="train.html" class="nav-link text-center"><span class="icon-train-main-menu pe-3"></span>Train</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="progress.html" class="nav-link text-center"><span class="icon-progress-main-menu pe-3"></span>Progress</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="account.html" class="nav-link text-center"><span class="icon-account-main-menu pe-3"></span>Account</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="row">
+                <div class="col-lg-12 mb-lg-5 mb-4">
+                    <h1>Evaluation</h1>
+                </div>
+            </div>
+
             <div class="row justify-content-center">
-                <div class="col-lg-6 col-12 px-4">
-                    <h1 class="mb-3">Evaluation</h1>
-                    <div class="alert alert-info alert-dismissible fade show d-flex text-start pe-3" role="alert">
-                        <div class="me-2">
+                <div class="col-lg-8">
+                    <div class="alert alert-info alert-dismissible fade show d-flex align-items-center text-start mb-0 pe-3" role="alert">
+                        <div class="me-2 flex-shrink">
                             <div class="alert-circle-style rounded-circle">
                                 <img src="images/alert.svg" alt="alert message">
                             </div>
                         </div>
 
-                        <p class="text-dark fw-bold">Obtain a detailed measurement of your cognitive skills by taking these evaluations.</p>
-                        <button type="button" class="close ps-2 align-self-baseline" data-bs-dismiss="alert" aria-label="Close">
+                        <p class="text-dark fw-bold flex-grow w-100">Obtain a detailed measurement of your cognitive skills by taking these evaluations.</p>
+                        <button type="button" class="close ps-2 align-self-baseline flex-shrink" data-bs-dismiss="alert" aria-label="Close">
                             <span class="icon-exit text-primary font-size-16"></span>
                         </button>
                     </div>
+                </div>
+            </div>
 
-                    <div class="row mt-4">
-                        <div class="col-12 text-center">
-                            <a href="progress.html">
-                                <div class="bg-light p-3 rounded-pill-30px mb-2">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="row">
-                                            <div class="col-3 col-md-2">
-                                                <div class="alert-circle-style bg-primary rounded-circle">
-                                                    <img src="images/general-evaluation.svg" alt="general evaluation">
-                                                </div>
-                                            </div>
-                                            <div class="col-9 col-md-10">
-                                                <h4 class="text-primary text-start mb-0">General Cognitive Evaluation</h4>
-                                            </div>
-                                            <div class="col-5 pt-3 text-start">
-                                                <p><span class="icon-time pe-2"></span>10 Minutes</p>
-                                            </div>
-                                            <div class="col-5 pt-3 text-start">
-                                                <p><span class="icon-skills pe-2"></span>5 Skills</p>
-                                            </div>
-                                        </div>
-
-                                        <span class="icon-next-evaluation text-primary font-size-24"></span>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <div class="bg-light p-3 rounded-pill-30px mb-2">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="row">
-                                        <div class="col-3 col-md-2">
-                                            <div class="alert-circle-style bg-warning rounded-circle">
-                                                <img src="images/memory-evaluation.svg" alt="memory evaluation">
-                                            </div>
-                                        </div>
-                                        <div class="col-9 col-md-10">
-                                            <h4 class="text-warning text-start mb-0">Memory Evaluation</h4>
-                                        </div>
-                                        <div class="col-5 pt-3 text-start">
-                                            <p><span class="icon-time pe-2"></span>34 Minutes</p>
-                                        </div>
-                                        <div class="col-5 pt-3 text-start">
-                                            <p><span class="icon-skills pe-2"></span>4 Skills</p>
+            <div class="row mt-lg-5 mt-4">
+                <div class="col-xl-4 col-lg-6 col-12 mb-lg-5 mb-4">
+                    <a href="progress.html">
+                        <div class="bg-light p-3 rounded-pill-30px">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="alert-circle-style bg-primary rounded-circle">
+                                            <img src="images/general-evaluation.svg" alt="general evaluation">
                                         </div>
                                     </div>
-
-                                    <a href="#"><span class="icon-next-evaluation text-warning font-size-24"></span></a>
-                                </div>
-                            </div>
-
-                            <div class="bg-light p-3 rounded-pill-30px mb-2">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="row">
-                                        <div class="col-3 col-md-2">
-                                            <div class="alert-circle-style bg-info rounded-circle">
-                                                <img src="images/mental-evaluation.svg" alt="mental math evaluation">
-                                            </div>
-                                        </div>
-                                        <div class="col-9 col-md-10">
-                                            <h4 class="text-info text-start mb-0">Mental Math Evaluation</h4>
-                                        </div>
-                                        <div class="col-5 pt-3 text-start">
-                                            <p><span class="icon-time pe-2"></span>26 Minutes</p>
-                                        </div>
-                                        <div class="col-5 pt-3 text-start">
-                                            <p><span class="icon-skills pe-2"></span>22 Skills</p>
-                                        </div>
+                                    <div class="col-9">
+                                        <h4 class="text-primary text-start mb-0">General Cognitive Evaluation</h4>
                                     </div>
-
-                                    <a href="#"><span class="icon-next-evaluation text-info font-size-24"></span></a>
-                                </div>
-                            </div>
-
-                            <div class="bg-light p-3 rounded-pill-30px mb-2">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="row">
-                                        <div class="col-3 col-md-2">
-                                            <div class="alert-circle-style bg-primary rounded-circle">
-                                                <img src="images/perception-evaluation.svg" alt="perception evaluation">
-                                            </div>
-                                        </div>
-                                        <div class="col-9 col-md-10">
-                                            <h4 class="text-primary text-start mb-0">Perception Cognitive Evaluation</h4>
-                                        </div>
-                                        <div class="col-5 pt-3 text-start">
-                                            <p><span class="icon-time pe-2"></span>10 Minutes</p>
-                                        </div>
-                                        <div class="col-5 pt-3 text-start">
-                                            <p><span class="icon-skills pe-2"></span>5 Skills</p>
-                                        </div>
+                                    <div class="col-5 pt-3 text-start">
+                                        <p><span class="icon-time pe-2"></span>10 Minutes</p>
                                     </div>
-
-                                    <a href="#"><span class="icon-next-evaluation text-primary font-size-24"></span></a>
-                                </div>
-                            </div>
-
-                            <div class="bg-light p-3 rounded-pill-30px mb-2">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="row">
-                                        <div class="col-3 col-md-2">
-                                            <div class="alert-circle-style bg-warning rounded-circle">
-                                                <img src="images/concentration-evaluation.svg" alt="memory evaluation">
-                                            </div>
-                                        </div>
-                                        <div class="col-9 col-md-10">
-                                            <h4 class="font-size-24 text-warning text-start mb-0">Concentration Evaluation</h4>
-                                        </div>
-                                        <div class="col-5 pt-3 text-start">
-                                            <p><span class="icon-time pe-2"></span>34 Minutes</p>
-                                        </div>
-                                        <div class="col-5 pt-3 text-start">
-                                            <p><span class="icon-skills pe-2"></span>4 Skills</p>
-                                        </div>
+                                    <div class="col-5 pt-3 text-start">
+                                        <p><span class="icon-skills pe-2"></span>5 Skills</p>
                                     </div>
-
-                                    <a href="#"><span class="icon-next-evaluation text-warning font-size-24"></span></a>
                                 </div>
-                            </div>
 
-                            <div class="bg-light p-3 rounded-pill-30px mb-2">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="row">
-                                        <div class="col-3 col-md-2">
-                                            <div class="alert-circle-style bg-info rounded-circle">
-                                                <img src="images/reasosing-evaluation.svg" alt="reasosing evaluation">
-                                            </div>
-                                        </div>
-                                        <div class="col-9 col-md-10">
-                                            <h4 class="font-size-24 text-info text-start mb-0">Reasosing Evaluation</h4>
-                                        </div>
-                                        <div class="col-5 pt-3 text-start">
-                                            <p><span class="icon-time pe-2"></span>26 Minutes</p>
-                                        </div>
-                                        <div class="col-5 pt-3 text-start">
-                                            <p><span class="icon-skills pe-2"></span>22 Skills</p>
-                                        </div>
-                                    </div>
-
-                                    <a href="#"><span class="icon-next-evaluation text-info font-size-24"></span></a>
-                                </div>
+                                <span class="icon-next-evaluation text-primary font-size-24"></span>
                             </div>
                         </div>
-                    </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-12 mb-lg-5 mb-4">
+                    <a href="progress.html">
+                        <div class="bg-light p-3 rounded-pill-30px">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="alert-circle-style bg-warning rounded-circle">
+                                            <img src="images/memory-evaluation.svg" alt="memory evaluation">
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <h4 class="text-warning text-start mb-0">Memory Evaluation</h4>
+                                    </div>
+                                    <div class="col-5 pt-3 text-start">
+                                        <p><span class="icon-time pe-2"></span>34 Minutes</p>
+                                    </div>
+                                    <div class="col-5 pt-3 text-start">
+                                        <p><span class="icon-skills pe-2"></span>4 Skills</p>
+                                    </div>
+                                </div>
+
+                                <a href="#"><span class="icon-next-evaluation text-warning font-size-24"></span></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 col-12 mb-lg-5 mb-4">
+                    <a href="progress.html">
+                        <div class="bg-light p-3 rounded-pill-30px">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="alert-circle-style bg-info rounded-circle">
+                                            <img src="images/mental-evaluation.svg" alt="mental math evaluation">
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <h4 class="text-info text-start mb-0">Mental Math Evaluation</h4>
+                                    </div>
+                                    <div class="col-5 pt-3 text-start">
+                                        <p><span class="icon-time pe-2"></span>26 Minutes</p>
+                                    </div>
+                                    <div class="col-5 pt-3 text-start">
+                                        <p><span class="icon-skills pe-2"></span>22 Skills</p>
+                                    </div>
+                                </div>
+
+                                <a href="#"><span class="icon-next-evaluation text-info font-size-24"></span></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 col-12 mb-lg-5 mb-4">
+                    <a href="progress.html">
+                        <div class="bg-light p-3 rounded-pill-30px">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="alert-circle-style bg-primary rounded-circle">
+                                            <img src="images/perception-evaluation.svg" alt="perception evaluation">
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <h4 class="text-primary text-start mb-0">Perception Cognitive Evaluation</h4>
+                                    </div>
+                                    <div class="col-5 pt-3 text-start">
+                                        <p><span class="icon-time pe-2"></span>10 Minutes</p>
+                                    </div>
+                                    <div class="col-5 pt-3 text-start">
+                                        <p><span class="icon-skills pe-2"></span>5 Skills</p>
+                                    </div>
+                                </div>
+
+                                <a href="#"><span class="icon-next-evaluation text-primary font-size-24"></span></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 col-12 mb-lg-5 mb-4">
+                    <a href="progress.html">
+                        <div class="bg-light p-3 rounded-pill-30px">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="alert-circle-style bg-warning rounded-circle">
+                                            <img src="images/concentration-evaluation.svg" alt="memory evaluation">
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <h4 class="font-size-24 text-warning text-start mb-0">Concentration Evaluation</h4>
+                                    </div>
+                                    <div class="col-5 pt-3 text-start">
+                                        <p><span class="icon-time pe-2"></span>34 Minutes</p>
+                                    </div>
+                                    <div class="col-5 pt-3 text-start">
+                                        <p><span class="icon-skills pe-2"></span>4 Skills</p>
+                                    </div>
+                                </div>
+
+                                <a href="#"><span class="icon-next-evaluation text-warning font-size-24"></span></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 col-12 mb-lg-5 mb-4">
+                    <a href="progress.html">
+                        <div class="bg-light p-3 rounded-pill-30px">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="alert-circle-style bg-info rounded-circle">
+                                            <img src="images/reasosing-evaluation.svg" alt="reasosing evaluation">
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <h4 class="font-size-24 text-info text-start mb-0">Reasosing Evaluation</h4>
+                                    </div>
+                                    <div class="col-5 pt-3 text-start">
+                                        <p><span class="icon-time pe-2"></span>26 Minutes</p>
+                                    </div>
+                                    <div class="col-5 pt-3 text-start">
+                                        <p><span class="icon-skills pe-2"></span>22 Skills</p>
+                                    </div>
+                                </div>
+
+                                <a href="#"><span class="icon-next-evaluation text-info font-size-24"></span></a>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-        <nav class="navbar footer-navbar fixed-bottom navbar-light bg-light justify-content-around p-4">
+        </div>
+        <nav class="navbar footer-navbar fixed-bottom navbar-light bg-light justify-content-around p-4 d-lg-none d-flex">
             <a href="play.html" class="text-center"><span class="icon-play-main-menu d-block pb-2"></span>Play</a>
             <a href="evaluation.html" class="active text-center"><span class="icon-evaluation-main-menu d-block pb-2"></span>Evaluation</a>
             <a href="train.html" class="text-center"><span class="icon-train-main-menu d-block pb-2"></span>Train</a>
@@ -183,6 +232,35 @@
             <a href="account.html" class="text-center"><span class="icon-account-main-menu d-block pb-2"></span>Account</a>
         </nav>
     </section>
+
+    <footer class="d-lg-block d-none py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <ul class="mt-4">
+                        <li class="d-inline px-2">
+                            <a href="#" class="font-size-14 text-white text-decoration-underline">Contact us</a>
+                        </li>
+                        <li class="d-inline px-2">
+                            <a href="#" class="font-size-14 text-white text-decoration-underline">FAQ</a>
+                        </li>
+                        <li class="d-inline px-2">
+                            <a href="#" class="font-size-14 text-white text-decoration-underline">T&C</a>
+                        </li>
+                        <li class="d-inline px-2">
+                            <a href="#" class="font-size-14 text-white text-decoration-underline">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 text-end">
+                    <a class="navbar-brand me-0" href="./index.html">
+                        <img src="images/logo.svg" class="navbar-brand-img" alt="logo">
+                    </a>
+                    <p class="text-white">©MIND+ 2021 All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/scripts.js"></script>
     <script src="js/bootstrap.min.js"></script>

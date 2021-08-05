@@ -13,12 +13,42 @@
 <body>
     <section class="main min-vh-100 pt-36px pb-140px">
         <div class="container">
+            <nav class="navbar navbar-light d-lg-flex d-none pb-80px">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="images/logo.svg" class="navbar-brand-img" alt="logo">
+                </a>
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-3">
+                        <a href="play.html" class="nav-link text-center"><span class="icon-play-main-menu pe-3"></span>Play</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="evaluation.html" class="nav-link text-center"><span class="icon-evaluation-main-menu pe-3"></span>Evaluation</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="train.html" class="nav-link text-center"><span class="icon-train-main-menu pe-3"></span>Train</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="progress.html" class="nav-link text-center"><span class="icon-progress-main-menu pe-3"></span>Progress</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="account.html" class="nav-link active text-center"><span class="icon-account-main-menu pe-3"></span>Account</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="row">
+                <div class="col-lg-12 mb-lg-5 mb-4">
+                    <a href="account.html">
+                        <h1>Account</h1>
+                    </a>
+                </div>
+            </div>
+
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-12 px-4">
-                    <h1 class="mb-3">Account</h1>
-
                     <a href="account-profile-info.html">
-                        <div class="bg-light p-3 rounded-pill-16px mb-2">
+                        <div class="bg-light p-3 rounded-pill-16px mb-lg-3 mb-2">
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="font-size-16 text-dark fw-bold">Profile Info</p>
                                 <span class="icon-next-evaluation text-primary font-size-16"></span>
@@ -27,7 +57,7 @@
                     </a>
 
                     <a href="account-terms.html">
-                        <div class="bg-light p-3 rounded-pill-16px mb-2">
+                        <div class="bg-light p-3 rounded-pill-16px mb-lg-3 mb-2">
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="font-size-16 text-dark fw-bold">Terms & Conditions</p>
                                 <span class="icon-next-evaluation text-primary font-size-16"></span>
@@ -36,7 +66,7 @@
                     </a>
 
                     <a href="account-contact-us.html">
-                        <div class="bg-light p-3 rounded-pill-16px mb-2">
+                        <div class="bg-light p-3 rounded-pill-16px mb-lg-3 mb-2">
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="font-size-16 text-dark fw-bold">Contact with Us</p>
                                 <span class="icon-next-evaluation text-primary font-size-16"></span>
@@ -45,7 +75,7 @@
                     </a>
 
                     <a href="account-faq.html">
-                        <div class="bg-light p-3 rounded-pill-16px mb-2">
+                        <div class="bg-light p-3 rounded-pill-16px mb-lg-3 mb-2">
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="font-size-16 text-dark fw-bold">FAQ</p>
                                 <span class="icon-next-evaluation text-primary font-size-16"></span>
@@ -54,7 +84,7 @@
                     </a>
 
                     <a data-bs-toggle="modal" data-bs-target="#navigation">
-                        <div class="bg-light p-3 rounded-pill-16px mb-2">
+                        <div class="bg-light p-3 rounded-pill-16px mb-lg-3 mb-2">
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="font-size-16 text-dark fw-bold">Tutorial</p>
                                 <span class="icon-next-evaluation text-primary font-size-16"></span>
@@ -64,7 +94,7 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar footer-navbar fixed-bottom navbar-light bg-light justify-content-around p-4">
+        <nav class="navbar footer-navbar fixed-bottom navbar-light bg-light justify-content-around p-4 d-lg-none d-flex">
             <a href="play.html" class="text-center"><span class="icon-play-main-menu d-block pb-2"></span>Play</a>
             <a href="evaluation.html" class="text-center"><span class="icon-evaluation-main-menu d-block pb-2"></span>Evaluation</a>
             <a href="train.html" class="text-center"><span class="icon-train-main-menu d-block pb-2"></span>Train</a>
@@ -73,10 +103,39 @@
         </nav>
     </section>
 
+    <footer class="d-lg-block d-none py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <ul class="mt-4">
+                        <li class="d-inline px-2">
+                            <a href="#" class="font-size-14 text-white text-decoration-underline">Contact us</a>
+                        </li>
+                        <li class="d-inline px-2">
+                            <a href="#" class="font-size-14 text-white text-decoration-underline">FAQ</a>
+                        </li>
+                        <li class="d-inline px-2">
+                            <a href="#" class="font-size-14 text-white text-decoration-underline">T&C</a>
+                        </li>
+                        <li class="d-inline px-2">
+                            <a href="#" class="font-size-14 text-white text-decoration-underline">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 text-end">
+                    <a class="navbar-brand me-0" href="./index.html">
+                        <img src="images/logo.svg" class="navbar-brand-img" alt="logo">
+                    </a>
+                    <p class="text-white">©MIND+ 2021 All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!-- Modal -->
     <div class="modal fade" id="navigation" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="navigationLabel" aria-hidden="true">
         <div class="text-end">
-            <button type="button" class="close pe-2 pt-4 mb-0" data-bs-dismiss="modal" aria-label="Close">
+            <button type="button" class="close pe-3 pt-4 mb-0" data-bs-dismiss="modal" aria-label="Close">
                 <span class="icon-exit text-white"></span>
             </button>
         </div>
@@ -93,13 +152,13 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <h1 class="mb-3">Navigation Menu</h1>
+                            <h1 class="mb-lg-5 mb-3">Navigation Menu</h1>
 
                             <span class="icon-train-main-menu text-info font-size-28"></span>
 
-                            <h1 class="my-3">Train your brain!</h1>
+                            <h1 class="my-lg-5 my-3">Train your brain!</h1>
 
-                            <p class="font-size-18 text-white fw-bold pb-3">The training programs are sessions with witch, through a variety of exercises, you will improve your cognitive skills. </p>
+                            <p class="font-size-18 text-white fw-bold pb-lg-5 pb-3">The training programs are sessions with witch, through a variety of exercises, you will improve your cognitive skills. </p>
 
                             <div class="px-4">
                                 <img src="images/tutorial-train.png" class="w-100">
@@ -107,13 +166,13 @@
                         </div>
 
                         <div class="carousel-item">
-                            <h1 class="mb-3">Navigation Menu</h1>
+                            <h1 class="mb-lg-5 mb-3">Navigation Menu</h1>
 
                             <span class="icon-evaluation-main-menu text-info font-size-28"></span>
 
-                            <h1 class="my-3">Specific Assassements</h1>
+                            <h1 class="my-lg-5 my-3">Specific Assassements</h1>
 
-                            <p class="font-size-18 text-white fw-bold pb-3">Your <span class="text-info">brain health</span> comes determinated by your cognitive hablities. Mind
+                            <p class="font-size-18 text-white fw-bold pb-lg-5 pb-3">Your <span class="text-info">brain health</span> comes determinated by your cognitive hablities. Mind
                                 <span class="text-info">+</span> measures 23 cognitive skills and will give your evoluation while you train. </p>
 
                             <div class="px-4">
@@ -122,13 +181,13 @@
                         </div>
 
                         <div class="carousel-item">
-                            <h1 class="mb-3">Navigation Menu</h1>
+                            <h1 class="mb-lg-5 mb-3">Navigation Menu</h1>
 
-                            <span class="icon-evaluation-main-menu text-info font-size-28"></span>
+                            <span class="icon-progress-main-menu text-info font-size-28"></span>
 
-                            <h1 class="my-3">Keep your progress!</h1>
+                            <h1 class="my-lg-5 my-3">Keep your progress!</h1>
 
-                            <p class="font-size-18 text-white fw-bold pb-3">Mind<span class="text-info">+</span> keeps track of the results and allows you to know your progress <span class="text-info">through time</span>.
+                            <p class="font-size-18 text-white fw-bold pb-lg-5 pb-3">Mind<span class="text-info">+</span> keeps track of the results and allows you to know your progress <span class="text-info">through time</span>.
                             </p>
 
                             <div class="px-5">
@@ -137,14 +196,11 @@
                         </div>
 
                         <div class="carousel-item">
-                            <h1 class="mb-3">Navigation Menu</h1>
+                            <h1 class="mb-lg-5 mb-3">Navigation Menu</h1>
 
                             <span class="icon-account-main-menu text-info font-size-28"></span>
 
-                            <h1 class="my-3">Account settings</h1>
-
-                            <p class="font-size-18 text-white fw-bold pb-4">Change your <span class="text-info">profile info</span> here!
-                            </p>
+                            <h1 class="my-lg-5 my-3">Account settings</h1>
 
                             <div class="px-4">
                                 <img src="images/tutorial-account.png" class="w-100">

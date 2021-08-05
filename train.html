@@ -13,92 +13,121 @@
 <body>
     <section class="main min-vh-100 pt-36px pb-140px">
         <div class="container">
+            <nav class="navbar navbar-light d-lg-flex d-none pb-80px">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="images/logo.svg" class="navbar-brand-img" alt="logo">
+                </a>
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-3">
+                        <a href="play.html" class="nav-link text-center"><span class="icon-play-main-menu pe-3"></span>Play</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="evaluation.html" class="nav-link text-center"><span class="icon-evaluation-main-menu pe-3"></span>Evaluation</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="train.html" class="nav-link active text-center"><span class="icon-train-main-menu pe-3"></span>Train</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="progress.html" class="nav-link text-center"><span class="icon-progress-main-menu pe-3"></span>Progress</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="account.html" class="nav-link text-center"><span class="icon-account-main-menu pe-3"></span>Account</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="row">
+                <div class="col-lg-12 mb-lg-5 mb-4">
+                    <h1>Train</h1>
+                </div>
+            </div>
+
             <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-7 col-sm-9 col-12 px-4">
-                    <h1 class="mb-3">Train</h1>
-                    <div class="alert alert-info alert-dismissible fade show d-flex pe-3" role="alert">
-                        <div class="me-2">
+                <div class="col-lg-8">
+                    <div class="alert alert-info alert-dismissible fade show d-flex align-items-center pe-3" role="alert">
+                        <div class="me-2 flex-shrink">
                             <div class="alert-circle-style rounded-circle">
                                 <img src="images/alert.svg" alt="alert message">
                             </div>
                         </div>
 
-                        <p class="text-dark fw-bold">Every training session includes 2 brain games, 1 evaluation task, and ends with your updated personalized scores!</p>
-                        <button type="button" class="close ps-2 align-self-baseline" data-bs-dismiss="alert" aria-label="Close">
+                        <p class="text-dark fw-bold flex-grow w-100">Every training session includes 2 brain games, 1 evaluation task, and ends with your updated personalized scores!</p>
+                        <button type="button" class="close ps-2 align-self-baseline text-end flex-shrink" data-bs-dismiss="alert" aria-label="Close">
                             <span class="icon-exit text-primary font-size-16"></span>
                         </button>
                     </div>
+                </div>
+            </div>
 
-                    <div class="row mt-4">
-                        <div class="col-6 text-center">
-                            <a href="post-result-5.html">
-                                <div class="train-circle-style rounded-circle mx-auto">
-                                    <img src="images/personal-train.svg" alt="personal celebral training">
-                                </div>
-                                <p class="font-size-16 text-white py-4 fw-bold">Personal cerebral training</p>
-                            </a>
+            <div class="row mt-lg-5 mt-2">
+                <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0">
+                    <a href="post-result-5.html">
+                        <div class="train-circle-style rounded-circle mx-auto">
+                            <img src="images/personal-train.svg" alt="personal celebral training">
                         </div>
-                        <div class="col-6 text-center">
-                            <a href="#">
-                                <div class="train-circle-style rounded-circle mx-auto">
-                                    <img src="images/memory-train.svg" alt="memory training">
-                                </div>
-                                <p class="font-size-16 text-white py-4 fw-bold">Memory Training</p>
-                            </a>
+                        <p class="font-size-16 text-white py-4 fw-bold">Personal cerebral training</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0">
+                    <a href="#">
+                        <div class="train-circle-style rounded-circle mx-auto">
+                            <img src="images/memory-train.svg" alt="memory training">
                         </div>
-                        <div class="col-6 text-center">
-                            <a href="#">
-                                <div class="train-circle-style rounded-circle mx-auto">
-                                    <img src="images/mental-math-train.svg" alt="mental math training">
-                                </div>
-                                <p class="font-size-16 text-white py-4 fw-bold">Mental Math Training</p>
-                            </a>
+                        <p class="font-size-16 text-white py-4 fw-bold">Memory Training</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0">
+                    <a href="#">
+                        <div class="train-circle-style rounded-circle mx-auto">
+                            <img src="images/mental-math-train.svg" alt="mental math training">
                         </div>
-                        <div class="col-6 text-center">
-                            <a href="#">
-                                <div class="train-circle-style rounded-circle mx-auto">
-                                    <img src="images/visual-perception.svg" alt="perception training">
-                                </div>
-                                <p class="font-size-16 text-white py-4 fw-bold">Perception Training</p>
-                            </a>
+                        <p class="font-size-16 text-white py-4 fw-bold">Mental Math Training</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0">
+                    <a href="#">
+                        <div class="train-circle-style rounded-circle mx-auto">
+                            <img src="images/visual-perception.svg" alt="perception training">
                         </div>
-                        <div class="col-6 text-center">
-                            <a href="#">
-                                <div class="train-circle-style rounded-circle mx-auto">
-                                    <img src="images/concetration-train.svg" alt="concetration training">
-                                </div>
-                                <p class="font-size-16 text-white py-4 fw-bold">Concetration training</p>
-                            </a>
+                        <p class="font-size-16 text-white py-4 fw-bold">Perception Training</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0">
+                    <a href="#">
+                        <div class="train-circle-style rounded-circle mx-auto">
+                            <img src="images/concetration-train.svg" alt="concetration training">
                         </div>
-                        <div class="col-6 text-center">
-                            <a href="#">
-                                <div class="train-circle-style rounded-circle mx-auto">
-                                    <img src="images/reasoning-train.svg" alt="reasoning training">
-                                </div>
-                                <p class="font-size-16 text-white py-4 fw-bold">Reasoning Training</p>
-                            </a>
+                        <p class="font-size-16 text-white py-4 fw-bold">Concetration training</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0">
+                    <a href="#">
+                        <div class="train-circle-style rounded-circle mx-auto">
+                            <img src="images/reasoning-train.svg" alt="reasoning training">
                         </div>
-                        <div class="col-6 text-center">
-                            <a href="#">
-                                <div class="train-circle-style rounded-circle mx-auto">
-                                    <img src="images/coordination-train.svg" alt="coordination training">
-                                </div>
-                                <p class="font-size-16 text-white py-4 fw-bold">Coordination Training</p>
-                            </a>
+                        <p class="font-size-16 text-white py-4 fw-bold">Reasoning Training</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0">
+                    <a href="#">
+                        <div class="train-circle-style rounded-circle mx-auto">
+                            <img src="images/coordination-train.svg" alt="coordination training">
                         </div>
-                        <div class="col-6 text-center">
-                            <a href="#">
-                                <div class="train-circle-style rounded-circle mx-auto">
-                                    <img src="images/driving-train.svg" alt="driving training">
-                                </div>
-                                <p class="font-size-16 text-white py-4 fw-bold">Driving Training</p>
-                            </a>
+                        <p class="font-size-16 text-white py-4 fw-bold">Coordination Training</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 text-center mb-lg-4 mb-0">
+                    <a href="#">
+                        <div class="train-circle-style rounded-circle mx-auto">
+                            <img src="images/driving-train.svg" alt="driving training">
                         </div>
-                    </div>
+                        <p class="font-size-16 text-white py-4 fw-bold">Driving Training</p>
+                    </a>
                 </div>
             </div>
         </div>
-        <nav class="navbar footer-navbar fixed-bottom navbar-light bg-light justify-content-around p-4">
+        <nav class="navbar footer-navbar fixed-bottom navbar-light bg-light justify-content-around p-4 d-lg-none d-flex">
             <a href="play.html" class="text-center"><span class="icon-play-main-menu d-block pb-2"></span>Play</a>
             <a href="evaluation.html" class="text-center"><span class="icon-evaluation-main-menu d-block pb-2"></span>Evaluation</a>
             <a href="train.html" class="active text-center"><span class="icon-train-main-menu d-block pb-2"></span>Train</a>
@@ -106,6 +135,35 @@
             <a href="account.html" class="text-center"><span class="icon-account-main-menu d-block pb-2"></span>Account</a>
         </nav>
     </section>
+
+    <footer class="d-lg-block d-none py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <ul class="mt-4">
+                        <li class="d-inline px-2">
+                            <a href="#" class="font-size-14 text-white text-decoration-underline">Contact us</a>
+                        </li>
+                        <li class="d-inline px-2">
+                            <a href="#" class="font-size-14 text-white text-decoration-underline">FAQ</a>
+                        </li>
+                        <li class="d-inline px-2">
+                            <a href="#" class="font-size-14 text-white text-decoration-underline">T&C</a>
+                        </li>
+                        <li class="d-inline px-2">
+                            <a href="#" class="font-size-14 text-white text-decoration-underline">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 text-end">
+                    <a class="navbar-brand me-0" href="./index.html">
+                        <img src="images/logo.svg" class="navbar-brand-img" alt="logo">
+                    </a>
+                    <p class="text-white">©MIND+ 2021 All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
