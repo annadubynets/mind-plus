@@ -91,6 +91,12 @@ if ($('.owl-carousel').length > 0) {
                 stagePadding: 40,
                 nav: true
             },
+            768: {
+                items: 5,
+                stagePadding: 40,
+                nav: true,
+                loop: false
+            },
             992: {
                 items: 11,
                 stagePadding: 40,

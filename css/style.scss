@@ -117,7 +117,7 @@ ul {
     }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 992px) {
     .btn {
         font-size: 31px!important;
     }
@@ -131,10 +131,11 @@ ul {
         font-size: 52px!important;
     }
     h4 {
-        font-size: 18px!important;
+        font-size: 24px!important;
     }
     .alert-info {
         font-size: 20px!important;
+        line-height: 22px!important;
     }
     .train-circle-style {
         width: 187px;
@@ -182,6 +183,9 @@ ul {
     }
     h2 {
         font-size: 23px!important;
+    }
+    h3 {
+        font-size: 22px!important;
     }
     h4 {
         font-size: 18px!important;
