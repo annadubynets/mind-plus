@@ -145,7 +145,7 @@ ul {
         font-size: 36px!important;
     }
     .font-size-16 {
-        font-size: 18px!important;
+        font-size: 25px!important;
     }
     .font-size-14 {
         font-size: 24px!important;
@@ -451,10 +451,10 @@ footer {
 }
 
 .owl-carousel {
-    .owl-nav button.owl-prev,
-    .owl-nav button.owl-next {
-        display: none;
-    }
+    // .owl-nav button.owl-prev,
+    // .owl-nav button.owl-next {
+    //     display: none;
+    // }
     .owl-dots {
         display: none;
     }

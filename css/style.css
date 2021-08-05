@@ -319,7 +319,7 @@ ul {
   }
 
   .font-size-16 {
-    font-size: 18px !important;
+    font-size: 25px !important;
   }
 
   .font-size-14 {
@@ -638,10 +638,6 @@ footer {
   border-radius: 16px;
 }
 
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel .owl-nav button.owl-next {
-  display: none;
-}
 .owl-carousel .owl-dots {
   display: none;
 }
