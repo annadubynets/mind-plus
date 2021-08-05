@@ -29,6 +29,9 @@ p {
 
 .btn-success {
     background-color: $springgreen;
+    &:hover {
+        background-color: $springgreen;
+    }
 }
 
 .btn-check:focus+.btn-success,

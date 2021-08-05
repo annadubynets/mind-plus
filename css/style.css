@@ -196,6 +196,9 @@ p {
 .btn-success {
   background-color: #32E28E;
 }
+.btn-success:hover {
+  background-color: #32E28E;
+}
 
 .btn-check:focus + .btn-success,
 .btn-success:focus {
