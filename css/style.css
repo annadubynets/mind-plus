@@ -592,7 +592,17 @@ footer {
 }
 @media (min-width: 360px) {
   .carousel-item {
-    min-height: 540px !important;
+    min-height: 500px !important;
+  }
+}
+@media (min-width: 375px) {
+  .carousel-item {
+    min-height: 550px !important;
+  }
+}
+@media (min-width: 400px) {
+  .carousel-item {
+    min-height: 600px !important;
   }
 }
 @media (min-width: 768px) {
