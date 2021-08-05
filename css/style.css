@@ -600,11 +600,6 @@ footer {
     min-height: 800px !important;
   }
 }
-@media (min-width: 992px) {
-  .carousel-item {
-    min-height: 900px !important;
-  }
-}
 .badge {
   padding: 0;
   width: 29px;
