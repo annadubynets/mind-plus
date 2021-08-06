@@ -71,6 +71,14 @@ p {
     box-shadow: none;
 }
 
+.btn-white {
+    padding: 13px 28px;
+    background: #F7F8F9;
+    border: 1px solid rgba(68, 173, 191, 0.2);
+    border-radius: 61px;
+    color: #606E7B;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -300,22 +308,6 @@ textarea {
     }
     .select-hide {
         display: none;
-    }
-}
-
-.input-group {
-    .input-group-text {
-        background: #F7F8F9;
-        border: 1px solid rgba(68, 173, 191, 0.2);
-        border-radius: 61px;
-        color: #606E7B;
-        font-size: 15px;
-        border-top-right-radius: 61px!important;
-        border-bottom-right-radius: 61px!important;
-    }
-    .form-control {
-        background: transparent!important;
-        color: $white!important;
     }
 }
 
