@@ -1059,6 +1059,12 @@ canvas.chartjs {
   .circle-style::before {
     font-size: 40px;
   }
+
+  .profile-bg {
+    background: rgba(125, 193, 209, 0.2);
+    border-radius: 25px;
+    padding-top: 30px;
+  }
 }
 @media (max-width: 360px) {
   .btn {
