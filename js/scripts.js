@@ -256,6 +256,21 @@ function roundRect(ctx, x, y, width, height, radius, fill, stroke) {
     }
 }
 
+/**
+ * File picker
+ */
+
+$(function() {
+    $('#attachment-file-input').on('change', function(e) {
+        $('.attachment-file-name').text(this.files[0].name)
+    });
+
+    $('.chose-attachment-file-btn').on('click', function(e) {
+        e.preventDefault();
+        $("#attachment-file-input").click();
+    })
+})
+
 /*
  DO NOT USER THIS CODE IN THE REAL PROJECT
  It handles ?rtl=true query param for testing rtl.
