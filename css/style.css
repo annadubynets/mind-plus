@@ -620,6 +620,24 @@ footer {
     min-height: 800px !important;
   }
 }
+@media (max-height: 414px) {
+  .fixed-bottom {
+    top: 0;
+    right: initial;
+    bottom: 0;
+    left: 0;
+    width: 90px;
+  }
+
+  .navbar.footer-navbar {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 30px;
+  }
+
+  .page-with-footer section {
+    padding-left: 120px;
+  }
+}
 .badge {
   padding: 0;
   width: 29px;
