@@ -197,10 +197,6 @@ p {
   background: linear-gradient(97.09deg, #132028 3.83%, #395765 98.1%);
 }
 
-.img-style {
-  width: 90px;
-}
-
 .btn {
   font-size: 18px;
   border-radius: 72px;
@@ -305,8 +301,8 @@ ul {
 
 .train-circle-style {
   background-color: #FFFFFF;
-  width: 162px;
-  height: 162px;
+  width: 120px;
+  height: 120px;
   position: relative;
 }
 .train-circle-style img {
@@ -1009,11 +1005,6 @@ canvas.chartjs {
     line-height: 22px !important;
   }
 
-  .train-circle-style {
-    width: 187px;
-    height: 187px;
-  }
-
   .font-size-20 {
     font-size: 36px !important;
   }
@@ -1097,8 +1088,8 @@ canvas.chartjs {
   }
 
   .train-circle-style {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
   }
 
   .font-size-20 {
@@ -1132,11 +1123,6 @@ canvas.chartjs {
   .circle-style {
     width: 52px;
     height: 52px;
-  }
-}
-@media (max-width: 992px) {
-  .img-style {
-    width: auto;
   }
 }
 
