@@ -19,6 +19,10 @@ p {
     background: linear-gradient(97.09deg, #132028 3.83%, #395765 98.1%);
 }
 
+.img-style {
+    width: 90px;
+}
+
 .btn {
     font-size: 18px;
     border-radius: 72px;
@@ -879,6 +883,9 @@ canvas.chartjs {
         width: 40px!important;
         height: 40px!important;
     }
+    .circle-style::before {
+        font-size: 40px;
+    }
 }
 
 @media (max-width: 360px) {
@@ -932,5 +939,11 @@ canvas.chartjs {
     .circle-style {
         width: 52px;
         height: 52px;
+    }
+}
+
+@media (max-width: 992px) {
+    .img-style {
+        width: auto;
     }
 }
