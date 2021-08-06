@@ -120,5 +120,5 @@ html[dir="rtl"] .icon-back-arrow:before {
 }
 
 html[dir="rtl"] .icon-next-evaluation:before {
-    content: "\e909";
+    content: "\e90f";
 }
