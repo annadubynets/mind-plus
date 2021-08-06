@@ -272,7 +272,7 @@ textarea {
             display: inline-block;
             padding: 3px;
             right: 15px;
-            top: 20px;
+            top: 15px;
         }
         &.select-arrow-active {
             border: 3px solid $skyblue;
@@ -280,7 +280,7 @@ textarea {
     }
     .select-arrow-active:after {
         transform: rotate( 180deg);
-        top: 20px;
+        top: 15px;
     }
     .select-items {
         position: absolute;
@@ -301,7 +301,7 @@ textarea {
         font-weight: 300!important;
         font-size: 16px;
         color: #8C9090;
-        padding: 16px;
+        padding: 8px 16px;
         border-radius: 16px;
         cursor: pointer;
         user-select: none;
@@ -309,6 +309,11 @@ textarea {
     .select-hide {
         display: none;
     }
+}
+
+.profile-select.custom-select .select-selected {
+    background-color: $whitesmoke;
+    border: 3px solid $whitesmoke;
 }
 
 .navbar.footer-navbar {
@@ -554,7 +559,7 @@ footer {
 .profile-accordion {
     border-radius: 16px;
     .accordion-header {
-        padding: 18px 16px;
+        padding: 10px 16px;
         border: 3px solid $white;
         border-radius: 16px;
     }
