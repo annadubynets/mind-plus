@@ -47,26 +47,48 @@
 
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-12 px-4">
-                    <div class="bg-white p-3 rounded-pill-16px mb-2">
-                        <p class="text-start pb-4">Do you have any issue on Mind+ store?<br> We will give you straight answers!</p>
-                        <p class="text-start pb-3">Contact us using our contact form below</p>
+                    <div class="bg-white py-3 px-0 rounded-pill-16px mb-2">
+                        <p class="text-start pb-4 px-3">Do you have any issue on Mind+ store?<br> We will give you straight answers!</p>
+                        <p class="text-start pb-3 px-3">Contact us using our contact form below</p>
 
                         <form>
-                            <div class="mb-3 text-start">
-                                <label for="inputName" class="form-label text-dark">Name</label>
-                                <input type="text" class="form-control bg-light" id="inputName" placeholder="Your Name">
-                            </div>
-                            <div class="mb-3 text-start">
+                            <div class="mb-3 text-start px-3">
                                 <label for="inputEmail" class="form-label text-dark">Email</label>
                                 <input type="email" class="form-control bg-light" id="inputEmail" placeholder="example@mind+.com">
                             </div>
-                            <div class="mb-4 text-start">
-                                <label for="textareaMessage" class="form-label text-dark">Message</label>
-                                <textarea class="form-control bg-light" id="textareaMessage" rows="4" placeholder="Enter your message here"></textarea>
+                            <div class="mb-3 text-start px-3">
+                                <label for="inputPhone" class="form-label text-dark">Phone number</label>
+                                <input type="tel" class="form-control bg-light" id="inputName" placeholder="example@mind+.com">
+                            </div>
+                            <div class="mb-3 text-start px-3">
+                                <label for="selectLanguage" class="form-label text-dark">Select an issue</label>
+                                <div class="custom-select form-control bg-light" id="selectLanguage">
+                                    <select>
+                                        <option value="0">Select issue</option>
+                                        <option value="1">Issue 1</option> 
+                                        <option value="2">Issue 2</option>
+                                  </select>
+                                </div>
+                            </div>
+                            <div class="mb-4 text-start px-3">
+                                <label for="textareaMessage" class="form-label text-dark">Describe your issue</label>
+                                <textarea class="form-control bg-light" id="textareaMessage" rows="4" placeholder="Describe your issue"></textarea>
                             </div>
 
-                            <div class="d-grid">
+                            <label for="textAttachment" class="form-label text-dark px-3">Attachment</label>
+                            <div class="py-2 bg-info">
+                                <div class="input-group px-3">
+                                    <input type="file" class="form-control" id="inputGroupFile">
+                                </div>
+                            </div>
+
+                            <div class="text-center mt-5 mb-3 px-3">
                                 <button type="button" class="btn btn-info">Send</button>
+                            </div>
+
+                            <div class="mb-3 text-start px-3">
+                                <label for="inputUser" class="form-label text-dark">User</label>
+                                <input type="text" class="form-control bg-light text-center" id="inputUser" placeholder="Wi-Fi User not detected">
                             </div>
                         </form>
                     </div>

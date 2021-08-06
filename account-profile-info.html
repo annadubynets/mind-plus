@@ -47,24 +47,45 @@
 
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-12 px-4">
-                    <form>
-                        <div class="mb-3 text-start">
-                            <label for="inputFirstName" class="form-label">First name</label>
-                            <input type="text" class="form-control" id="inputFirstName" placeholder="Your Name">
-                        </div>
-                        <div class="mb-3 text-start">
-                            <label for="inputLastName" class="form-label">Last name</label>
-                            <input type="text" class="form-control" id="inputLastName" placeholder="Your last name">
-                        </div>
-                        <div class="mb-3 text-start">
-                            <label for="inputBirtday" class="form-label">Birthday</label>
-                            <input type="date" class="form-control" id="inputBirtday" placeholder="dd-mm-year" value="year-mm-dd">
-                        </div>
 
-                        <div class="mb-5 text-start">
-                            <label for="selectLanguage" class="form-label">Language</label>
-                            <div class="custom-select" id="selectLanguage">
-                                <select>
+                    <div class="mb-4 text-start">
+                        <label for="selectLanguage" class="form-label">Profile Info</label>
+                        <div class="accordion profile-accordion accordion-flush bg-white" id="accordionFlushExample">
+                            <div class="accordion-item mb-lg-3 mb-2">
+                                <h2 class="accordion-header bg-white" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Change profile info
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body bg-white">
+                                        <form>
+                                            <div class="mb-3 text-start">
+                                                <label for="inputFirstName" class="form-label text-dark">First name</label>
+                                                <input type="text" class="form-control bg-transparent" id="inputFirstName" placeholder="Your Name">
+                                            </div>
+                                            <div class="mb-3 text-start">
+                                                <label for="inputLastName" class="form-label text-dark">Last name</label>
+                                                <input type="text" class="form-control bg-transparent" id="inputLastName" placeholder="Your last name">
+                                            </div>
+                                            <div class="mb-3 text-start">
+                                                <label for="inputBirtday" class="form-label text-dark">Birthday</label>
+                                                <input type="date" class="form-control bg-transparent" id="inputBirtday" placeholder="dd-mm-year" value="year-mm-dd">
+                                            </div>
+                                            <div class="d-grid">
+                                                <button type="button" class="btn btn-info">Save</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-5 text-start">
+                        <label for="selectLanguage" class="form-label">Language</label>
+                        <div class="custom-select" id="selectLanguage">
+                            <select>
                                     <option value="0">English</option>
                                     <option value="1">Español</option> 
                                     <option value="2">Français</option>
@@ -73,17 +94,12 @@
                                     <option value="5">中国人</option>
                                     <option value="6">한국어</option>
                               </select>
-                            </div>
                         </div>
+                    </div>
 
-                        <div class="text-start pb-5">
-                            <a class="font-size-12 text-info text-decoration-underline" data-bs-toggle="modal" data-bs-target="#liveSubscription">Leave Mind+ subscription</a>
-                        </div>
-
-                        <div class="d-grid">
-                            <button type="button" class="btn btn-info">Save</button>
-                        </div>
-                    </form>
+                    <div class="text-center pb-5">
+                        <a class="font-size-12 text-info text-decoration-underline" data-bs-toggle="modal" data-bs-target="#liveSubscription">Leave Mind+ subscription</a>
+                    </div>
                 </div>
             </div>
         </div>
