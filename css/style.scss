@@ -891,7 +891,7 @@ canvas.chartjs {
         padding: 15px 0;
     }
     p {
-        font-size: 13px!important;
+        font-size: 12px!important;
     }
     h1 {
         font-size: 28px!important;
@@ -936,5 +936,11 @@ canvas.chartjs {
     .circle-style {
         width: 52px;
         height: 52px;
+    }
+    .styled-accordion .accordion-button {
+        font-size: 12px!important;
+    }
+    .styled-accordion .accordion-body {
+        font-size: 12px!important;
     }
 }
