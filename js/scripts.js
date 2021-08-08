@@ -210,7 +210,7 @@ function buildChart(canvasElem, labels, values, goalIndex) {
                         padding: 20,
                         font: {
                             name: 'Futura',
-                            weight: 500,
+                            weight: 600,
                         }
                     }
                 }
