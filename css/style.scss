@@ -842,9 +842,6 @@ canvas.chartjs {
             width: 23px;
             height: 23px;
         }
-        .img-style {
-            width: 9px;
-        }
         .font-size-24 {
             font-size: 10px;
         }
@@ -855,6 +852,20 @@ canvas.chartjs {
             p {
                 font-size: 6px;
             }
+        }
+    }
+    .orientation-train-list {
+        .col-6 {
+            flex: 0 0 auto;
+            width: 25%;
+        }
+        .train-circle-style {
+            width: 75px;
+            height: 75px;
+        }
+        p {
+            font-size: 7px!important;
+            padding: 10px 0 14px 0!important;
         }
     }
     .col-sm-6 {
