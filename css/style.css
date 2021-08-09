@@ -639,7 +639,7 @@ footer {
   }
 
   .page-with-footer section {
-    padding-left: 120px;
+    padding-left: 80px;
   }
 }
 .badge {
@@ -989,20 +989,6 @@ canvas.chartjs {
   background: #F7F8FA;
 }
 
-@media (min-width: 568px) {
-  .pe-sm-2 {
-    padding-right: 0.5rem !important;
-  }
-
-  .ps-sm-2 {
-    padding-left: 0.5rem !important;
-  }
-
-  .px-sm-1 {
-    padding-right: 0.25rem !important;
-    padding-left: 0.25rem !important;
-  }
-}
 @media (orientation: landscape) and (max-width: 992px) {
   .col-xl-4 {
     flex: 0 0 auto;
