@@ -823,10 +823,12 @@ canvas.chartjs {
     }
 }
 
-.card {
-    border-radius: 30px;
-    padding: 16px;
-    background: $whitesmoke;
+.orientation-card-list {
+    .card {
+        border-radius: 30px;
+        padding: 16px;
+        background: $whitesmoke;
+    }
 }
 
 @media (orientation: landscape) and (max-width: 736px) {
