@@ -894,6 +894,15 @@ canvas.chartjs {
     }
 }
 
+@media (max-width: 992px) {
+    .font-size-28 {
+        font-size: 21px !important;
+    }
+    .font-size-39 {
+        font-size: 30px !important;
+    }
+}
+
 @media (min-width: 992px) {
     .btn {
         font-size: 24px!important;
