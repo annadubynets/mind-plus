@@ -13,6 +13,29 @@
 <body class="page-with-footer">
     <section class="main min-vh-100 pt-20px pb-140px">
         <div class="container">
+            <nav class="navbar navbar-light d-lg-flex d-none pb-80px">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="images/logo.svg" class="navbar-brand-img" alt="logo">
+                </a>
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-3">
+                        <a href="play.html" class="nav-link text-center"><span class="icon-play-main-menu pe-3"></span>بعل</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="evaluation.html" class="nav-link text-center"><span class="icon-evaluation-main-menu pe-3"></span>مييقت</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="train.html" class="nav-link active text-center"><span class="icon-train-main-menu pe-3"></span>نيرمت</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="progress.html" class="nav-link text-center"><span class="icon-progress-main-menu pe-3"></span>مدقت</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a href="account.html" class="nav-link text-center"><span class="icon-account-main-menu pe-3"></span>باسحلا</a>
+                    </li>
+                </ul>
+            </nav>
             <div class="row px-lg-3 px-4">
                 <div class="col-lg-12 px-1 px-lg-2 mb-lg-5 mb-4">
                     <h1>نيرمت</h1>
@@ -102,7 +125,7 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar footer-navbar fixed-bottom navbar-light bg-light justify-content-around p-4">
+        <nav class="navbar footer-navbar fixed-bottom navbar-light bg-light justify-content-around p-4 d-lg-none d-fle">
             <a href="play.html" class="text-center"><span class="icon-play-main-menu d-block pb-2"></span>بعل</a>
             <a href="evaluation.html" class="text-center"><span class="icon-evaluation-main-menu d-block pb-2"></span>مييقت</a>
             <a href="train.html" class="active text-center"><span class="icon-train-main-menu d-block pb-2"></span>نيرمت</a>
@@ -110,6 +133,39 @@
             <a href="account.html" class="text-center"><span class="icon-account-main-menu d-block pb-2"></span>باسحلا</a>
         </nav>
     </section>
+
+    <footer class="d-lg-block d-none py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-end">
+                    <a class="navbar-brand me-0" href="./index.html">
+                        <img src="images/logo.svg" class="navbar-brand-img" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="row align-items-baseline">
+                <div class="col-6">
+                    <ul class="mt-4">
+                        <li class="d-inline px-2">
+                            <a href="#" class="font-size-14 text-white text-decoration-underline">Contact us</a>
+                        </li>
+                        <li class="d-inline px-2">
+                            <a href="#" class="font-size-14 text-white text-decoration-underline">T&C</a>
+                        </li>
+                        <li class="d-inline px-2">
+                            <a href="#" class="font-size-14 text-white text-decoration-underline">Privacy Policy</a>
+                        </li>
+                        <li class="d-inline px-2">
+                            <a href="#" class="font-size-14 text-white text-decoration-underline">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 text-end">
+                    <p class="text-white">©MIND+ 2021 All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
