@@ -983,24 +983,52 @@ canvas.chartjs {
   font-size: 17px;
 }
 
-@media (min-width: 568px) and (max-width: 992px) {
+.card {
+  border-radius: 30px;
+  padding: 16px;
+  background: #F7F8FA;
+}
+
+@media (min-width: 568px) {
+  .pe-sm-2 {
+    padding-right: 0.5rem !important;
+  }
+
+  .ps-sm-2 {
+    padding-left: 0.5rem !important;
+  }
+
+  .px-sm-1 {
+    padding-right: 0.25rem !important;
+    padding-left: 0.25rem !important;
+  }
+}
+@media (orientation: landscape) and (max-width: 992px) {
   .col-xl-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
   }
 
-  .card-horizontal h4 {
+  .orientation-card-list h4 {
     font-size: 9px !important;
   }
-  .card-horizontal .alert-circle-style {
+  .orientation-card-list .alert-circle-style {
     width: 23px;
     height: 23px;
   }
-  .card-horizontal .img-style {
+  .orientation-card-list .img-style {
     width: 9px;
   }
-  .card-horizontal .font-size-24 {
+  .orientation-card-list .font-size-24 {
     font-size: 10px;
+  }
+  .orientation-card-list .card {
+    border-radius: 15px;
+    padding: 9px;
+    background: #F7F8FA;
+  }
+  .orientation-card-list .card p {
+    font-size: 6px;
   }
 
   .col-sm-6 {
