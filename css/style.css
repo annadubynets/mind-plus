@@ -989,7 +989,7 @@ canvas.chartjs {
   background: #F7F8FA;
 }
 
-@media (orientation: landscape) and (max-width: 992px) {
+@media (orientation: landscape) and (max-width: 736px) {
   .col-xl-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
@@ -1029,7 +1029,7 @@ canvas.chartjs {
 
   .col-sm-6 {
     flex: 0 0 auto;
-    width: 42%;
+    width: 42% !important;
   }
 
   .carousel-indicators [data-bs-target] {
