@@ -415,9 +415,10 @@ footer {
 }
 
 .carousel-indicators {
-    bottom: -40px;
+    bottom: -60px;
     margin-right: 0;
     margin-left: 0;
+    margin-bottom: 0;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -611,10 +612,6 @@ footer {
     }
 }
 
-
-
-
-
 // .progress-circle.progress.progress-circle-primary:after {
 //     content: "";
 //     width: 100%;
@@ -625,7 +622,6 @@ footer {
 //     top: 0;
 //     left: 0
 // }
-
 // .progress-circle.progress.progress-circle-warning:after {
 //     content: "";
 //     width: 100%;
@@ -636,7 +632,6 @@ footer {
 //     top: 0;
 //     left: 0
 // }
-
 // .progress-circle.progress>span {
 //     width: 50%;
 //     height: 100%;
@@ -645,11 +640,9 @@ footer {
 //     top: 0;
 //     z-index: 1
 // }
-
 // .progress-circle.progress .progress-left {
 //     left: 0
 // }
-
 // .progress-circle.progress .progress-bar {
 //     width: 100%;
 //     height: 100%;
@@ -659,7 +652,6 @@ footer {
 //     position: absolute;
 //     top: 0
 // }
-
 // .progress-circle.progress .progress-left .progress-bar {
 //     left: 100%;
 //     border-top-right-radius: 50px;
@@ -668,11 +660,9 @@ footer {
 //     -webkit-transform-origin: center left;
 //     transform-origin: center left
 // }
-
 // .progress-circle.progress .progress-right {
 //     right: 0
 // }
-
 // .progress-circle.progress .progress-right .progress-bar {
 //     left: -100%;
 //     border-top-left-radius: 50px;
@@ -682,7 +672,6 @@ footer {
 //     transform-origin: center right;
 //     animation: loading-1 1.8s linear forwards
 // }
-
 // .progress-circle.progress .progress-value {
 //     width: 90%;
 //     height: 90%;
@@ -696,29 +685,21 @@ footer {
 //     top: 5%;
 //     left: 5%
 // }
-
 // .progress-circle.progress.blue .progress-bar {
 //     border-color: $mediumturquoise;
 // }
-
 // .progress-circle.progress.blue .progress-left .progress-bar {
 //     animation: loading-2 1.5s linear forwards 1.8s
 // }
-
 // .progress-circle.progress.yellow .progress-bar {
 //     border-color: #DF6729;
 // }
-
 // .progress-circle.progress.yellow .progress-left .progress-bar {
 //     animation: loading-3 1.8s linear forwards
 // }
-
 // .progress-circle.progress.yellow .progress-left .progress-bar {
 //     animation: none
 // }
-
-
-
 // @keyframes loading-1 {
 //     0% {
 //         -webkit-transform: rotate(0deg);
@@ -729,7 +710,6 @@ footer {
 //         transform: rotate(180deg)
 //     }
 // }
-
 // @keyframes loading-2 {
 //     0% {
 //         -webkit-transform: rotate(0deg);
@@ -740,7 +720,6 @@ footer {
 //         transform: rotate(144deg)
 //     }
 // }
-
 // @keyframes loading-3 {
 //     0% {
 //         -webkit-transform: rotate(0deg);
@@ -751,7 +730,6 @@ footer {
 //         transform: rotate(135deg)
 //     }
 // }
-
 canvas.chartjs {
     background: #5A7591;
     border-radius: 20px;
@@ -822,6 +800,17 @@ canvas.chartjs {
         border-radius: 30px;
         padding: 16px;
         background: $whitesmoke;
+    }
+}
+
+.tutorial {
+    .card-2 {
+        margin-top: -60px;
+        z-index: -1;
+    }
+    .card-3 {
+        margin-top: -60px;
+        z-index: -2;
     }
 }
 

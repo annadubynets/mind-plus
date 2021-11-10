@@ -1874,9 +1874,10 @@ footer {
   }
 }
 .carousel-indicators {
-  bottom: -40px;
+  bottom: -60px;
   margin-right: 0;
   margin-left: 0;
+  margin-bottom: 0;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -2129,6 +2130,15 @@ canvas.chartjs {
   border-radius: 30px;
   padding: 16px;
   background: #F7F8FA;
+}
+
+.tutorial .card-2 {
+  margin-top: -60px;
+  z-index: -1;
+}
+.tutorial .card-3 {
+  margin-top: -60px;
+  z-index: -2;
 }
 
 @media (orientation: landscape) and (max-width: 736px) {
