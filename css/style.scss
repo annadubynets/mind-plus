@@ -715,6 +715,22 @@ canvas.chartjs {
         flex: 0 0 auto;
         width: 33.33333333%;
     }
+    .tutorial-col {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .row-cols-5 {
+        .font-size-15 {
+            font-size: 6px!important;
+        }
+    }
+    .card .card-header {
+        font-size: 15px!important;
+    }
+    .progress-circle.progress {
+        width: 35px;
+        height: 35px!important;
+    }
     .orientation-card-list {
         h4 {
             font-size: 9px!important;
@@ -736,10 +752,6 @@ canvas.chartjs {
         }
     }
     .orientation-train-list {
-        .col-6 {
-            flex: 0 0 auto;
-            width: 25%;
-        }
         .train-circle-style {
             width: 75px;
             height: 75px;
@@ -764,7 +776,7 @@ canvas.chartjs {
             font-size: 16px!important;
         }
         p {
-            font-size: 8px!important;
+            font-size: 12px!important;
         }
         .w-75 {
             width: 50%!important;
@@ -855,7 +867,7 @@ canvas.chartjs {
 @media (max-width: 1200px) {
     .row-cols-5 {
         .font-size-15 {
-            font-size: 12px!important;
+            font-size: 12px;
         }
     }
 }
