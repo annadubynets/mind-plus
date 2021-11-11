@@ -1878,14 +1878,19 @@ footer {
   }
 }
 .carousel-indicators {
-  bottom: 30px;
+  bottom: 0;
   margin-right: 0;
   margin-left: 0;
   margin-bottom: 0;
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .carousel-indicators {
     bottom: -60px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .carousel-indicators {
+    bottom: 80px;
   }
 }
 
@@ -2148,6 +2153,16 @@ canvas.chartjs {
 .tutorial .card-3 {
   margin-top: -60px;
   z-index: -2;
+}
+.tutorial .tutorial-text {
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+@media (min-width: 1200px) {
+  .tutorial .tutorial-text {
+    font-size: 24px !important;
+  }
 }
 
 @media (orientation: landscape) and (max-width: 736px) {
