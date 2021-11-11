@@ -135,6 +135,10 @@ h4 {
   border-color: #BF6F46 !important;
 }
 
+.border {
+  border: 3px solid #44ADBF !important;
+}
+
 .fw-bolder {
   font-family: "Futura Md BT";
   font-weight: 500 !important;
@@ -1874,10 +1878,15 @@ footer {
   }
 }
 .carousel-indicators {
-  bottom: -60px;
+  bottom: 30px;
   margin-right: 0;
   margin-left: 0;
   margin-bottom: 0;
+}
+@media (max-width: 992px) {
+  .carousel-indicators {
+    bottom: -60px;
+  }
 }
 
 .carousel-indicators [data-bs-target] {
@@ -1905,7 +1914,7 @@ footer {
 }
 @media (min-width: 400px) {
   .carousel-item {
-    min-height: 600px !important;
+    min-height: 605px !important;
   }
 }
 @media (min-width: 768px) {

@@ -415,10 +415,13 @@ footer {
 }
 
 .carousel-indicators {
-    bottom: -60px;
+    bottom: 30px;
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 0;
+    @media (max-width: 992px) {
+        bottom: -60px;
+    }
 }
 
 .carousel-indicators [data-bs-target] {
@@ -449,7 +452,7 @@ footer {
 
 @media (min-width: 400px) {
     .carousel-item {
-        min-height: 600px!important;
+        min-height: 605px!important;
     }
 }
 
