@@ -419,10 +419,10 @@ footer {
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 0;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         bottom: -60px;
     }
-    @media (min-width: 768px) and (max-width: 1200px) {
+    @media (min-width: 768px) and (max-width: 992px) {
         bottom: 80px;
     }
 }
@@ -455,7 +455,7 @@ footer {
 
 @media (min-width: 400px) {
     .carousel-item {
-        min-height: 605px!important;
+        min-height: 615px!important;
     }
 }
 
@@ -704,7 +704,7 @@ canvas.chartjs {
         font-weight: 600;
         font-size: 18px;
         color: $white;
-        @media (min-width: 1200px) {
+        @media (min-width: 992px) {
             font-size: 24px!important;
         }
     }

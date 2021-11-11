@@ -1883,12 +1883,12 @@ footer {
   margin-left: 0;
   margin-bottom: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .carousel-indicators {
     bottom: -60px;
   }
 }
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .carousel-indicators {
     bottom: 80px;
   }
@@ -1919,7 +1919,7 @@ footer {
 }
 @media (min-width: 400px) {
   .carousel-item {
-    min-height: 605px !important;
+    min-height: 615px !important;
   }
 }
 @media (min-width: 768px) {
@@ -2159,7 +2159,7 @@ canvas.chartjs {
   font-size: 18px;
   color: #FFFFFF;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .tutorial .tutorial-text {
     font-size: 24px !important;
   }
