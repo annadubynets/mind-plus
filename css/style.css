@@ -2180,13 +2180,44 @@ canvas.chartjs {
     font-size: 6px !important;
   }
 
+  .alert-circle-style {
+    width: 20px;
+    height: 20px;
+  }
+  .alert-circle-style img {
+    width: 10px;
+  }
+
   .card .card-header {
-    font-size: 15px !important;
+    font-size: 8px !important;
+    padding: 6px 10px;
+  }
+
+  .flex-grow-1 {
+    font-size: 4px;
+  }
+  .flex-grow-1 .progress {
+    height: 4px;
+  }
+  .flex-grow-1 span {
+    font-size: 5px;
+  }
+
+  .progress-circle .progress-bar {
+    border-width: 3px;
+  }
+
+  .progress-circle.progress-circle-primary:after {
+    border-width: 3px;
+  }
+
+  .progress-circle.progress-circle-warning:after {
+    border-width: 3px;
   }
 
   .progress-circle.progress {
-    width: 35px;
-    height: 35px !important;
+    width: 18px;
+    height: 18px !important;
   }
 
   .orientation-card-list h4 {
