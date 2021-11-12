@@ -1877,6 +1877,36 @@ footer {
     display: none;
   }
 }
+.carousel-control-prev {
+  left: -70px;
+  top: 20%;
+}
+
+.carousel-control-next {
+  right: -70px;
+  top: 20%;
+}
+
+.carousel-control-prev-icon {
+  background-image: none;
+}
+.carousel-control-prev-icon::before {
+  font-family: "icomoon";
+  content: "";
+  color: #fff;
+  font-size: 30px;
+}
+
+.carousel-control-next-icon {
+  background-image: none;
+}
+.carousel-control-next-icon::after {
+  font-family: "icomoon";
+  content: "";
+  color: #fff;
+  font-size: 30px;
+}
+
 .carousel-indicators {
   bottom: 0;
   margin-right: 0;
@@ -2171,18 +2201,34 @@ canvas.chartjs {
     width: 33.33333333%;
   }
 
-  .tutorial-col {
+  .col-6 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .tutorial-col-xl {
+    flex: 0 0 auto;
+    width: 90%;
+  }
+
+  .tutorial-col-md {
     flex: 0 0 auto;
     width: 58%;
   }
 
   .row-cols-5 .font-size-15 {
-    font-size: 6px !important;
+    font-size: 4px !important;
   }
 
   .tutorial .card-2,
 .tutorial .card-3 {
     margin-top: -45px;
+  }
+
+  .tutorial-header {
+    display: inline-block;
+    margin-bottom: 0 !important;
+    margin-right: 4px;
   }
 
   .alert-circle-style {
@@ -2191,6 +2237,14 @@ canvas.chartjs {
   }
   .alert-circle-style img {
     width: 10px;
+  }
+
+  .carousel-control-prev-icon::before {
+    font-size: 15px;
+  }
+
+  .carousel-control-next-icon::after {
+    font-size: 15px;
   }
 
   .card .card-header {
@@ -2272,6 +2326,9 @@ canvas.chartjs {
   }
   .carousel-item p {
     font-size: 12px !important;
+  }
+  .carousel-item .font-size-13 {
+    font-size: 5px !important;
   }
   .carousel-item .w-75 {
     width: 50% !important;

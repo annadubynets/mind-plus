@@ -271,6 +271,32 @@ $(function() {
     })
 })
 
+/**
+ * Tutorial carousel behaviour script. Hides and shows the preb and the next arrows on the carousel
+ */
+$(function() {
+    const carouselSelector = '#tutorialCarousel';
+    var carouselEl = $(carouselSelector);
+    if (carouselEl.length == 0) return;
+
+    var checkActiveCard = function() {
+        if ($(carouselSelector + " .carousel-inner .carousel-item:first").hasClass("active")) {
+            carouselEl.children(".carousel-control-prev").hide();
+            carouselEl.children(".carousel-control-next").show();
+        } else if ($(carouselSelector + " .carousel-inner .carousel-item:last").hasClass("active")) {
+            carouselEl.children(".carousel-control-next").hide();
+            carouselEl.children(".carousel-control-prev").show();
+        } else {
+            carouselEl.children(".carousel-control-prev").show();
+            carouselEl.children(".carousel-control-next").show();
+        }
+    };
+
+    checkActiveCard();
+
+    $(carouselSelector).on("slid.bs.carousel", "", checkActiveCard);
+})
+
 /*
  DO NOT USER THIS CODE IN THE REAL PROJECT
  It handles ?rtl=true query param for testing rtl.

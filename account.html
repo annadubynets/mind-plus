@@ -146,19 +146,27 @@
 
         <div class="modal-dialog progress-dialog my-0">
             <div class="modal-content text-center">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="false" data-bs-interval="false">
+                <div id="tutorialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="false" data-bs-interval="false">
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#tutorialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#tutorialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#tutorialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#tutorialCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#tutorialCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#tutorialCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#tutorialCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
                     <div class="carousel-inner tutorial">
                         <div class="carousel-item active">
                             <div class="row justify-content-center">
-                                <div class="col-12 tutorial-col">
-                                    <h1 class="mb-4">Navigation Menu</h1>
+                                <div class="col-12 tutorial-col-xl">
+                                    <h1 class="mb-4 tutorial-header">Navigation Menu</h1>
 
                                     <span class="icon-train-main-menu text-info font-size-28"></span>
 
@@ -195,8 +203,8 @@
 
                         <div class="carousel-item">
                             <div class="row justify-content-center">
-                                <div class="col-12 tutorial-col">
-                                    <h1 class="mb-4">Navigation Menu</h1>
+                                <div class="col-12 tutorial-col-md">
+                                    <h1 class="mb-4 tutorial-header">Navigation Menu</h1>
 
                                     <span class="icon-evaluation-main-menu text-info font-size-28"></span>
 
@@ -287,8 +295,8 @@
 
                         <div class="carousel-item">
                             <div class="row justify-content-center">
-                                <div class="col-12 tutorial-col">
-                                    <h1 class="mb-4">Navigation Menu</h1>
+                                <div class="col-12 tutorial-col-xl">
+                                    <h1 class="mb-4 tutorial-header">Navigation Menu</h1>
 
                                     <span class="icon-progress-main-menu text-info font-size-28"></span>
 
@@ -298,7 +306,7 @@
                                     </p>
 
                                     <div class="row justify-content-center px-lg-3 px-4">
-                                        <div class="col-12 px-1 px-lg-2">
+                                        <div class="col-12 col-sm-6 col-lg-12 px-1 px-lg-2">
                                             <div class="card mb-3">
                                                 <div class="card-header text-start">
                                                     Cognitive areas
@@ -348,7 +356,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-12 px-1 px-lg-2">
                                             <div class="card">
                                                 <div class="card-body py-2">
                                                     <div class="d-flex w-100 pe-3 pb-2">
@@ -386,8 +395,8 @@
 
                         <div class="carousel-item">
                             <div class="row justify-content-center">
-                                <div class="col-12 tutorial-col">
-                                    <h1 class="mb-4">Navigation Menu</h1>
+                                <div class="col-12 tutorial-col-md">
+                                    <h1 class="mb-4 tutorial-header">Navigation Menu</h1>
 
                                     <span class="icon-account-main-menu text-info font-size-28"></span>
 
@@ -432,7 +441,7 @@
 
                         <div class="carousel-item">
                             <div class="row justify-content-center">
-                                <div class="col-12 tutorial-col">
+                                <div class="col-12 tutorial-col-md">
                                     <h1 class="mb-5">Cognitive Graph</h1>
 
                                     <p class="tutorial-text pb-5">This cognitive Graph will show your evolution through your <span class="text-info">scores</span>
