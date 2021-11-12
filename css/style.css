@@ -1880,11 +1880,13 @@ footer {
 .carousel-control-prev {
   left: -70px;
   top: 20%;
+  opacity: 1;
 }
 
 .carousel-control-next {
   right: -70px;
   top: 20%;
+  opacity: 1;
 }
 
 .carousel-control-prev-icon {
