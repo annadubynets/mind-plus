@@ -467,28 +467,8 @@ footer {
     margin: 0 15px;
 }
 
-@media (min-width: 320px) {
-    .carousel-item {
-        min-height: 450px!important;
-    }
-}
-
-@media (min-width: 360px) {
-    .carousel-item {
-        min-height: 500px!important;
-    }
-}
-
-@media (min-width: 375px) {
-    .carousel-item {
-        min-height: 550px!important;
-    }
-}
-
-@media (min-width: 400px) {
-    .carousel-item {
-        min-height: 615px!important;
-    }
+.carousel-item {
+    min-height: 85vh!important;
 }
 
 @media (min-width: 768px) {
@@ -852,7 +832,7 @@ canvas.chartjs {
         margin: 0 8px;
     }
     .carousel-item {
-        min-height: 260px!important;
+        min-height: 70vh!important;
         h1 {
             font-size: 16px!important;
         }
