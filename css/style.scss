@@ -198,8 +198,8 @@ ul {
         background: transparent;
         border: none;
     }
-
-    -webkit-transform: none !important; transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
 }
 
 .modal-backdrop {
@@ -458,7 +458,7 @@ footer {
     margin-left: 0;
     margin-bottom: 0;
     @media (max-width: 767px) {
-        bottom: -60px;
+        bottom: -50px;
     }
     @media (min-width: 768px) and (max-width: 992px) {
         bottom: 80px;
@@ -732,6 +732,10 @@ canvas.chartjs {
     }
 }
 
+.carousel {
+    min-height: calc(100vh - 84px);
+}
+
 .carousel-item {
     label {
         font-size: 18px;
@@ -742,11 +746,9 @@ canvas.chartjs {
     .carousel-control-prev {
         left: -70px;
     }
-    
     .carousel-control-next {
         right: -70px;
     }
-
     .col-xl-4 {
         flex: 0 0 auto;
         width: 33.33333333%;
@@ -885,7 +887,6 @@ canvas.chartjs {
     .carousel-control-prev {
         left: -20px;
     }
-    
     .carousel-control-next {
         right: -20px;
     }
