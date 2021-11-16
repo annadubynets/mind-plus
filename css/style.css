@@ -1663,6 +1663,10 @@ ul {
   border-radius: 30px;
 }
 
+.modal-dialog.progress-dialog {
+  -webkit-transform: none !important;
+  transform: none !important;
+}
 .modal-dialog.progress-dialog .modal-content {
   background: transparent;
   border: none;
@@ -1878,19 +1882,21 @@ footer {
   }
 }
 .carousel-control-prev {
-  left: -70px;
+  left: -100px;
   top: 20%;
   opacity: 1;
 }
 
 .carousel-control-next {
-  right: -70px;
+  right: -100px;
   top: 20%;
   opacity: 1;
 }
 
 .carousel-control-prev-icon {
   background-image: none;
+  position: fixed;
+  top: 50%;
 }
 .carousel-control-prev-icon::before {
   font-family: "icomoon";
@@ -1901,6 +1907,8 @@ footer {
 
 .carousel-control-next-icon {
   background-image: none;
+  position: fixed;
+  top: 50%;
 }
 .carousel-control-next-icon::after {
   font-family: "icomoon";
@@ -2182,6 +2190,14 @@ canvas.chartjs {
 }
 
 @media (orientation: landscape) and (max-width: 736px) {
+  .carousel-control-prev {
+    left: -70px;
+  }
+
+  .carousel-control-next {
+    right: -70px;
+  }
+
   .col-xl-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
@@ -2322,6 +2338,15 @@ canvas.chartjs {
 
   .navbar.footer-navbar {
     z-index: 1000;
+  }
+}
+@media (orientation: landscape) and (max-width: 568px) {
+  .carousel-control-prev {
+    left: -20px;
+  }
+
+  .carousel-control-next {
+    right: -20px;
   }
 }
 @media (max-width: 992px) {
