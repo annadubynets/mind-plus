@@ -198,6 +198,8 @@ ul {
         background: transparent;
         border: none;
     }
+
+    -webkit-transform: none !important; transform: none !important;
 }
 
 .modal-backdrop {
@@ -415,19 +417,21 @@ footer {
 }
 
 .carousel-control-prev {
-    left: -70px;
+    left: -100px;
     top: 20%;
     opacity: 1;
 }
 
 .carousel-control-next {
-    right: -70px;
+    right: -100px;
     top: 20%;
     opacity: 1;
 }
 
 .carousel-control-prev-icon {
     background-image: none;
+    position: fixed;
+    top: 50%;
     &::before {
         font-family: 'icomoon';
         content: "\e90f";
@@ -438,6 +442,8 @@ footer {
 
 .carousel-control-next-icon {
     background-image: none;
+    position: fixed;
+    top: 50%;
     &::after {
         font-family: 'icomoon';
         content: "\e906";
@@ -471,28 +477,8 @@ footer {
     }
 }
 
-@media (min-width: 320px) {
-    .carousel-item {
-        min-height: 450px!important;
-    }
-}
-
-@media (min-width: 360px) {
-    .carousel-item {
-        min-height: 500px!important;
-    }
-}
-
-@media (min-width: 375px) {
-    .carousel-item {
-        min-height: 550px!important;
-    }
-}
-
-@media (min-width: 400px) {
-    .carousel-item {
-        min-height: 615px!important;
-    }
+.carousel-item {
+    min-height: 85vh!important;
 }
 
 @media (min-width: 768px) {
@@ -753,6 +739,14 @@ canvas.chartjs {
 }
 
 @media (orientation: landscape) and (max-width: 736px) {
+    .carousel-control-prev {
+        left: -70px;
+    }
+    
+    .carousel-control-next {
+        right: -70px;
+    }
+
     .col-xl-4 {
         flex: 0 0 auto;
         width: 33.33333333%;
@@ -862,7 +856,7 @@ canvas.chartjs {
         margin: 0 8px;
     }
     .carousel-item {
-        min-height: 260px!important;
+        min-height: 70vh!important;
         h1 {
             font-size: 16px!important;
         }
@@ -884,6 +878,16 @@ canvas.chartjs {
     }
     .navbar.footer-navbar {
         z-index: 1000;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 568px) {
+    .carousel-control-prev {
+        left: -20px;
+    }
+    
+    .carousel-control-next {
+        right: -20px;
     }
 }
 
