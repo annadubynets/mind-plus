@@ -463,8 +463,12 @@ footer {
     width: 14px;
     height: 14px;
     border-radius: 100%;
-    background-color: $skyblue;
-    margin: 0 15px;
+    background-color: $white;
+    margin: 0 25px;
+    opacity: 1;
+    &.active {
+        background-color: $skyblue;
+    }
 }
 
 @media (min-width: 320px) {
@@ -742,6 +746,12 @@ canvas.chartjs {
     }
 }
 
+.carousel-item {
+    label {
+        font-size: 18px;
+    }
+}
+
 @media (orientation: landscape) and (max-width: 736px) {
     .col-xl-4 {
         flex: 0 0 auto;
@@ -859,11 +869,17 @@ canvas.chartjs {
         p {
             font-size: 12px!important;
         }
+        label {
+            font-size: 8px;
+        }
         .font-size-13 {
             font-size: 5px!important;
         }
         .w-75 {
             width: 50%!important;
+        }
+        .border {
+            border: 2px solid $skyblue!important;
         }
     }
     .navbar.footer-navbar {

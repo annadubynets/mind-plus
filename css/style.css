@@ -1930,8 +1930,12 @@ footer {
   width: 14px;
   height: 14px;
   border-radius: 100%;
+  background-color: #FFFFFF;
+  margin: 0 25px;
+  opacity: 1;
+}
+.carousel-indicators [data-bs-target].active {
   background-color: #7DC1D1;
-  margin: 0 15px;
 }
 
 @media (min-width: 320px) {
@@ -2197,6 +2201,10 @@ canvas.chartjs {
   }
 }
 
+.carousel-item label {
+  font-size: 18px;
+}
+
 @media (orientation: landscape) and (max-width: 736px) {
   .col-xl-4 {
     flex: 0 0 auto;
@@ -2329,11 +2337,17 @@ canvas.chartjs {
   .carousel-item p {
     font-size: 12px !important;
   }
+  .carousel-item label {
+    font-size: 8px;
+  }
   .carousel-item .font-size-13 {
     font-size: 5px !important;
   }
   .carousel-item .w-75 {
     width: 50% !important;
+  }
+  .carousel-item .border {
+    border: 2px solid #7DC1D1 !important;
   }
 
   .navbar.footer-navbar {
