@@ -1888,7 +1888,7 @@ footer {
 }
 @media (max-width: 576px) {
   .carousel-control-prev {
-    left: -15px;
+    left: -20px;
   }
 }
 
@@ -1899,7 +1899,7 @@ footer {
 }
 @media (max-width: 576px) {
   .carousel-control-next {
-    right: -15px;
+    right: -20px;
   }
 }
 
@@ -2449,7 +2449,7 @@ canvas.chartjs {
 }
 @media (max-width: 1200px) {
   .row-cols-5 .font-size-15 {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 }
 @media (max-width: 414px) {
