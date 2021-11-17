@@ -420,12 +420,18 @@ footer {
     left: -100px;
     top: 20%;
     opacity: 1;
+    @media (max-width: 576px) {
+        left: -15px;
+    }
 }
 
 .carousel-control-next {
     right: -100px;
     top: 20%;
     opacity: 1;
+    @media (max-width: 576px) {
+        right: -15px;
+    }
 }
 
 .carousel-control-prev-icon {
@@ -437,6 +443,9 @@ footer {
         content: "\e90f";
         color: #fff;
         font-size: 30px;
+        @media (max-width: 575px) {
+            font-size: 24px;
+        }
     }
 }
 
@@ -449,31 +458,9 @@ footer {
         content: "\e906";
         color: #fff;
         font-size: 30px;
-    }
-}
-
-.carousel-indicators {
-    bottom: 0;
-    margin-right: 0;
-    margin-left: 0;
-    margin-bottom: 0;
-    @media (max-width: 767px) {
-        bottom: -50px;
-    }
-    @media (min-width: 768px) and (max-width: 992px) {
-        bottom: 80px;
-    }
-}
-
-.carousel-indicators [data-bs-target] {
-    width: 14px;
-    height: 14px;
-    border-radius: 100%;
-    background-color: $white;
-    margin: 0 25px;
-    opacity: 1;
-    &.active {
-        background-color: $skyblue;
+        @media (max-width: 575px) {
+            font-size: 24px;
+        }
     }
 }
 
@@ -851,11 +838,6 @@ canvas.chartjs {
     .col-sm-6 {
         flex: 0 0 auto;
         width: 42%!important;
-    }
-    .carousel-indicators [data-bs-target] {
-        width: 5px;
-        height: 5px;
-        margin: 0 8px;
     }
     .carousel-item {
         min-height: 70vh!important;
