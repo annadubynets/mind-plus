@@ -420,8 +420,11 @@ footer {
     left: -100px;
     top: 20%;
     opacity: 1;
-    @media (max-width: 576px) {
+    @media (max-width: 414px) {
         left: -20px;
+    }
+    @media (min-width: 415px) and (max-width: 576px) {
+        left: -30px;
     }
 }
 
@@ -429,8 +432,11 @@ footer {
     right: -100px;
     top: 20%;
     opacity: 1;
-    @media (max-width: 576px) {
+    @media (max-width: 414px) {
         right: -20px;
+    }
+    @media (min-width: 415px) and (max-width: 576px) {
+        right: -30px;
     }
 }
 

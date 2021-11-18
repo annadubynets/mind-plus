@@ -1886,9 +1886,14 @@ footer {
   top: 20%;
   opacity: 1;
 }
-@media (max-width: 576px) {
+@media (max-width: 414px) {
   .carousel-control-prev {
     left: -20px;
+  }
+}
+@media (min-width: 415px) and (max-width: 576px) {
+  .carousel-control-prev {
+    left: -30px;
   }
 }
 
@@ -1897,9 +1902,14 @@ footer {
   top: 20%;
   opacity: 1;
 }
-@media (max-width: 576px) {
+@media (max-width: 414px) {
   .carousel-control-next {
     right: -20px;
+  }
+}
+@media (min-width: 415px) and (max-width: 576px) {
+  .carousel-control-next {
+    right: -30px;
   }
 }
 
