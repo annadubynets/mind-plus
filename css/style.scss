@@ -476,7 +476,7 @@ footer {
 
 @media (min-width: 768px) {
     .carousel-item {
-        min-height: 800px!important;
+        min-height: 600px!important;
     }
 }
 
@@ -790,7 +790,6 @@ canvas.chartjs {
         padding: 6px 10px;
     }
     .flex-grow-1 {
-        font-size: 4px;
         .progress {
             height: 4px;
         }
@@ -857,7 +856,7 @@ canvas.chartjs {
             font-size: 8px;
         }
         .font-size-13 {
-            font-size: 5px!important;
+            font-size: 7px!important;
         }
         .w-75 {
             width: 50%!important;
@@ -971,6 +970,10 @@ canvas.chartjs {
             font-size: 9px!important;
         }
     }
+
+    .tutorial-col-xl {
+        width: 95%;
+    }
 }
 
 @media (max-width: 375px) {
@@ -1033,6 +1036,12 @@ canvas.chartjs {
     .styled-accordion .accordion-body {
         font-size: 12px!important;
     }
+}
+
+@media (max-width: 320px) {
+    .tutorial-col-xl {
+        width: 100%;
+    }    
 }
 
 .evaluation-cards-list {
