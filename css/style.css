@@ -2176,11 +2176,11 @@ canvas.chartjs {
 }
 
 .tutorial .card-2 {
-  margin-top: -60px;
+  margin-top: -44px;
   z-index: -1;
 }
 .tutorial .card-3 {
-  margin-top: -60px;
+  margin-top: -44px;
   z-index: -2;
 }
 .tutorial .tutorial-text {
@@ -2274,7 +2274,7 @@ canvas.chartjs {
     height: 4px;
   }
   .flex-grow-1 span {
-    font-size: 5px;
+    font-size: 7px;
   }
 
   .progress-circle .progress-bar {
