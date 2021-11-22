@@ -735,149 +735,12 @@ canvas.chartjs {
     }
 }
 
-@media (orientation: landscape) and (max-width: 736px) {
-    .carousel-control-prev {
-        left: -70px;
-    }
-    .carousel-control-next {
-        right: -70px;
-    }
-    .col-xl-4 {
-        flex: 0 0 auto;
-        width: 33.33333333%;
-    }
-    .col-6 {
-        flex: 0 0 auto;
-        width: 25%;
-    }
-    .tutorial-col-xl {
-        flex: 0 0 auto;
-        width: 90%;
-    }
-    .tutorial-col-md {
-        flex: 0 0 auto;
-        width: 58%;
-    }
-    .row-cols-5 {
-        .font-size-15 {
-            font-size: 4px!important;
-        }
-    }
-    .tutorial .card-2 {
-        margin-top: -33px;
-    }
-    .tutorial .card-3 {
-        margin-top: -26px;
-    }
-    .tutorial-header {
-        display: inline-block;
-        margin-bottom: 0!important;
-        margin-right: 4px;
-    }
-    .alert-circle-style {
-        width: 20px;
-        height: 20px;
-        img {
-            width: 10px;
-        }
-    }
-    .carousel-control-prev-icon::before {
-        font-size: 15px;
-    }
-    .carousel-control-next-icon::after {
-        font-size: 15px;
-    }
-    .card .card-header {
-        font-size: 8px!important;
-        padding: 6px 10px;
-    }
-    .flex-grow-1 {
-        .progress {
-            height: 4px;
-        }
-        span {
-            font-size: 7px;
-        }
-    }
-    .progress-circle .progress-bar {
-        border-width: 3px;
-    }
-    .progress-circle.progress-circle-primary:after {
-        border-width: 3px;
-    }
-    .progress-circle.progress-circle-warning:after {
-        border-width: 3px;
-    }
-    .progress-circle.progress {
-        width: 18px;
-        height: 18px!important;
-    }
-    .orientation-card-list {
-        h4 {
-            font-size: 16px!important;
-        }
-        .alert-circle-style {
-            width: 32px;
-            height: 32px;
-        }
-        .font-size-24 {
-            font-size: 10px;
-        }
-        .card {
-            border-radius: 15px;
-            padding: 9px;
-            background: $whitesmoke;
-            p {
-                font-size: 6px;
-            }
-        }
-    }
-    .orientation-train-list {
-        .train-circle-style {
-            width: 75px;
-            height: 75px;
-        }
-        p {
-            font-size: 7px!important;
-            padding: 10px 0 14px 0!important;
-        }
-    }
-    .col-sm-6 {
-        flex: 0 0 auto;
-        width: 42%!important;
-    }
-    .carousel-item {
-        min-height: 70vh!important;
-        h1 {
-            font-size: 16px!important;
-        }
-        p {
-            font-size: 12px!important;
-        }
-        label {
-            font-size: 8px;
-        }
-        .font-size-13 {
-            font-size: 7px!important;
-        }
-        .w-75 {
-            width: 50%!important;
-        }
-        .border {
-            border: 2px solid $skyblue!important;
-        }
-    }
-    .navbar.footer-navbar {
-        z-index: 1000;
-    }
-}
-
-@media (orientation: landscape) and (max-width: 568px) {
-    .carousel-control-prev {
-        left: -20px;
-    }
-    .carousel-control-next {
-        right: -20px;
+.evaluation-cards-list {
+    .next-evaluation-link {
+        position: absolute;
+        top: 50%;
+        margin-top: -12px;
+        right: 1rem;
     }
 }
 
@@ -919,9 +782,7 @@ canvas.chartjs {
     .font-size-14 {
         font-size: 24px!important;
     }
-    .font-size-13 {
-        font-size: 22px!important;
-    }
+    
     .font-size-12 {
         font-size: 20px!important;
     }
@@ -1046,11 +907,154 @@ canvas.chartjs {
     }    
 }
 
-.evaluation-cards-list {
-    .next-evaluation-link {
-        position: absolute;
-        top: 50%;
-        margin-top: -12px;
-        right: 1rem;
+@media (orientation: landscape) and (max-width: 736px) {
+    .carousel-control-prev {
+        left: -70px;
+    }
+    .carousel-control-next {
+        right: -70px;
+    }
+    .col-xl-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+    .col-6 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+    .tutorial-col-xl {
+        flex: 0 0 auto;
+        width: 90%;
+    }
+    .tutorial-col-md {
+        flex: 0 0 auto;
+        width: 58%;
+    }
+    .row-cols-5 {
+        .font-size-15 {
+            font-size: 9px!important;
+        }
+    }
+    .tutorial {
+         .card-2 {
+            margin-top: -33px;
+        }
+        .card-3 {
+            margin-top: -26px;
+        }
+        .navigation-menu-content {
+            max-width: 85%;
+            margin: auto;
+        }
+    }
+    .tutorial-header {
+        display: inline-block;
+        margin-bottom: 0!important;
+        margin-right: 4px;
+    }
+    .alert-circle-style {
+        width: 20px;
+        height: 20px;
+        img {
+            width: 10px;
+        }
+    }
+    .carousel-control-prev-icon::before {
+        font-size: 15px;
+    }
+    .carousel-control-next-icon::after {
+        font-size: 15px;
+    }
+    .card .card-header {
+        font-size: 8px!important;
+        padding: 6px 10px;
+    }
+    .flex-grow-1 {
+        .progress {
+            height: 4px;
+        }
+        span {
+            font-size: 9px;
+        }
+    }
+    .progress-circle .progress-bar {
+        border-width: 3px;
+    }
+    .progress-circle.progress-circle-primary:after {
+        border-width: 3px;
+    }
+    .progress-circle.progress-circle-warning:after {
+        border-width: 3px;
+    }
+    .progress-circle.progress {
+        width: 18px;
+        height: 18px!important;
+    }
+    .orientation-card-list {
+        h4 {
+            font-size: 16px!important;
+        }
+        .alert-circle-style {
+            width: 32px;
+            height: 32px;
+        }
+        .font-size-24 {
+            font-size: 10px;
+        }
+        .card {
+            border-radius: 15px;
+            padding: 9px;
+            background: $whitesmoke;
+            p {
+                font-size: 6px;
+            }
+        }
+    }
+    .orientation-train-list {
+        .train-circle-style {
+            width: 75px;
+            height: 75px;
+        }
+        p {
+            font-size: 7px!important;
+            padding: 10px 0 14px 0!important;
+        }
+    }
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 42%!important;
+    }
+    .carousel-item {
+        min-height: 70vh!important;
+        h1 {
+            font-size: 16px!important;
+        }
+        p {
+            font-size: 12px!important;
+        }
+        label {
+            font-size: 8px;
+        }
+        .font-size-13 {
+            font-size: 9px!important;
+        }
+        .w-75 {
+            width: 50%!important;
+        }
+        .border {
+            border: 2px solid $skyblue!important;
+        }
+    }
+    .navbar.footer-navbar {
+        z-index: 1000;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 568px) {
+    .carousel-control-prev {
+        left: -20px;
+    }
+    .carousel-control-next {
+        right: -20px;
     }
 }
