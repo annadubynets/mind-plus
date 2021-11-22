@@ -763,9 +763,11 @@ canvas.chartjs {
             font-size: 4px!important;
         }
     }
-    .tutorial .card-2,
+    .tutorial .card-2 {
+        margin-top: -33px;
+    }
     .tutorial .card-3 {
-        margin-top: -45px;
+        margin-top: -26px;
     }
     .tutorial-header {
         display: inline-block;
