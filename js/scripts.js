@@ -276,7 +276,8 @@ $(function() {
  */
 $(function() {
     const carouselSelector = '#tutorialCarousel';
-    var carouselEl = $(carouselSelector);
+    const carouselEl = $(carouselSelector);
+    const parentModal = carouselEl.closest('.modal');
     if (carouselEl.length == 0) return;
 
     var checkActiveCard = function() {
@@ -290,6 +291,7 @@ $(function() {
             carouselEl.children(".carousel-control-prev").show();
             carouselEl.children(".carousel-control-next").show();
         }
+        parentModal.animate({ scrollTop: 0 }, "fast");
     };
 
     checkActiveCard();
