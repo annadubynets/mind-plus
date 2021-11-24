@@ -2527,7 +2527,7 @@ canvas.chartjs {
   }
 
   .carousel-item {
-    min-height: 70vh !important;
+    min-height: 320px !important;
   }
   .carousel-item h1 {
     font-size: 16px !important;
