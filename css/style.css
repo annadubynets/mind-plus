@@ -2313,6 +2313,10 @@ canvas.chartjs {
   .tutorial-col-xl {
     width: 95%;
   }
+
+  .tutorial .assessment-tab h4 {
+    font-size: 22px !important;
+  }
 }
 @media (max-width: 375px) {
   .btn {
@@ -2392,10 +2396,22 @@ canvas.chartjs {
   .styled-accordion .accordion-body {
     font-size: 12px !important;
   }
+
+  .tutorial .assessment-tab h4 {
+    font-size: 18px !important;
+  }
 }
 @media (max-width: 320px) {
   .tutorial-col-xl {
     width: 100%;
+  }
+
+  .tutorial .assessment-tab .alert-circle-style {
+    width: 45px;
+    height: 45px;
+  }
+  .tutorial .assessment-tab h4 {
+    font-size: 14px !important;
   }
 }
 @media (orientation: landscape) and (max-width: 736px) {
