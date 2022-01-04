@@ -1947,6 +1947,41 @@ footer {
   }
 }
 
+[dir=rtl] .carousel-control-next {
+  left: -100px;
+  right: initial;
+}
+@media (max-width: 414px) {
+  [dir=rtl] .carousel-control-next {
+    left: -20px;
+  }
+}
+@media (min-width: 415px) and (max-width: 576px) {
+  [dir=rtl] .carousel-control-next {
+    left: -35px;
+  }
+}
+[dir=rtl] .carousel-control-next .carousel-control-next-icon::after {
+  content: "";
+}
+[dir=rtl] .carousel-control-prev {
+  left: initial;
+  right: -100px;
+}
+@media (max-width: 414px) {
+  [dir=rtl] .carousel-control-prev {
+    right: -20px;
+  }
+}
+@media (min-width: 415px) and (max-width: 576px) {
+  [dir=rtl] .carousel-control-prev {
+    right: -35px;
+  }
+}
+[dir=rtl] .carousel-control-prev .carousel-control-prev-icon::before {
+  content: "";
+}
+
 .carousel-item {
   min-height: 85vh !important;
 }
@@ -2423,6 +2458,15 @@ canvas.chartjs {
     right: -70px;
   }
 
+  [dir=rtl] .carousel-control-prev {
+    left: initial;
+    right: -70px;
+  }
+  [dir=rtl] .carousel-control-next {
+    left: -70px;
+    right: initial;
+  }
+
   .col-xl-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
@@ -2575,6 +2619,15 @@ canvas.chartjs {
 
   .carousel-control-next {
     right: -20px;
+  }
+
+  [dir=rtl] .carousel-control-prev {
+    left: initial;
+    right: -20px;
+  }
+  [dir=rtl] .carousel-control-next {
+    left: -20px;
+    right: initial;
   }
 }
 

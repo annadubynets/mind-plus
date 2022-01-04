@@ -470,6 +470,40 @@ footer {
     }
 }
 
+[dir="rtl"] {
+    .carousel-control-next {
+        left: -100px;
+        @media (max-width: 414px) {
+            left: -20px;
+        }
+        @media (min-width: 415px) and (max-width: 576px) {
+            left: -35px;
+        }
+        right: initial;
+        .carousel-control-next-icon {
+            &::after {
+                content: "\e90f";
+            }
+        }
+    }
+
+    .carousel-control-prev {
+        left: initial;
+        right: -100px;
+        @media (max-width: 414px) {
+            right: -20px;
+        }
+        @media (min-width: 415px) and (max-width: 576px) {
+            right: -35px;
+        }
+        .carousel-control-prev-icon {
+            &::before {
+                content: "\e906";
+            }
+        }
+    }
+}
+
 .carousel-item {
     min-height: 85vh!important;
 }
@@ -943,6 +977,16 @@ canvas.chartjs {
     .carousel-control-next {
         right: -70px;
     }
+    [dir="rtl"] {
+        .carousel-control-prev {
+            left: initial;
+            right: -70px;
+        }
+        .carousel-control-next {
+            left: -70px;
+            right: initial;
+        }
+    }
     .col-xl-4 {
         flex: 0 0 auto;
         width: 33.33333333%;
@@ -1085,5 +1129,16 @@ canvas.chartjs {
     }
     .carousel-control-next {
         right: -20px;
+    }
+
+    [dir="rtl"] { 
+        .carousel-control-prev {
+            left: initial;
+            right: -20px;
+        }
+        .carousel-control-next {
+            left: -20px;
+            right: initial;
+        }
     }
 }
